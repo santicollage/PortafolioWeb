@@ -9,7 +9,7 @@
   "location": "Ciudad, País",
   "available": true,
   "availabilityText": "Disponible para proyectos",
-  "photo": "/profile.jpg",
+  "photo": "/profile.svg",
   "cv": "/cv.pdf",
   "email": "hello@tudominio.com",
   "social": {

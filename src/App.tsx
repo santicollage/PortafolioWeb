@@ -8,11 +8,13 @@ import { Experience } from "./components/sections/Experience";
 import { About } from "./components/sections/About";
 import { Services } from "./components/sections/Services";
 import { ServicesPage } from "./pages/ServicesPage";
+import { ScrollToTop } from "./components/ui/ScrollToTop";
 
 function PortfolioHome() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <main>
         <Hero />
         <Skills />
@@ -36,6 +38,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <ScrollToTop />
               <ServicesPage />
               <Footer />
             </>
