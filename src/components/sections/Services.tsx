@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+import personalData from "../../data/personal.json";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -150,7 +151,7 @@ export function Services() {
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="mailto:hello@tudominio.com"
+                href={`mailto:${personalData.email}`}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-white/30 text-white font-semibold hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
               >
                 Enviar mensaje

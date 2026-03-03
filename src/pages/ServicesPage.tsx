@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import servicesData from "../data/services.json";
+import personalData from "../data/personal.json";
 
 const ICON_MAP: Record<
   string,
@@ -191,7 +192,7 @@ export function ServicesPage() {
               necesitas.
             </p>
             <a
-              href="mailto:hello@tudominio.com"
+              href={`mailto:${personalData.email}`}
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-white text-[#0F0F0F] font-semibold hover:bg-white/90 transition-colors"
             >
               Contactar ahora
