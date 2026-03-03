@@ -1,0 +1,20 @@
+{
+  "name": "Tu Nombre",
+  "firstName": "Tu",
+  "lastName": "Nombre",
+  "title": "Fullstack Web Developer",
+  "subtitle": "Construyo experiencias web modernas y escalables",
+  "bio": "Desarrollador web apasionado por crear soluciones digitales elegantes. Especializado en React, Node.js y arquitecturas modernas. Me enfoco en escribir código limpio, escalable y con excelente experiencia de usuario.",
+  "bioExtended": "Con más de 3 años de experiencia en desarrollo web, he trabajado en proyectos que van desde aplicaciones empresariales hasta plataformas SaaS. Me apasiona la intersección entre el diseño y la tecnología, siempre buscando la mejor solución técnica que también ofrezca una experiencia de usuario memorable.\n\nTrabajo tanto con empresas buscando reforzar su equipo técnico, como con clientes independientes que necesitan llevar sus ideas al mundo digital. Cada proyecto es una oportunidad de aprender y crecer.\n\nCuando no estoy programando, me gusta explorar nuevas tecnologías, contribuir a proyectos open source y compartir conocimiento con la comunidad.",
+  "location": "Ciudad, País",
+  "available": true,
+  "availabilityText": "Disponible para proyectos",
+  "photo": "/profile.jpg",
+  "cv": "/cv.pdf",
+  "email": "hello@tudominio.com",
+  "social": {
+    "linkedin": "https://linkedin.com/in/tunombre",
+    "github": "https://github.com/tunombre",
+    "twitter": ""
+  }
+}

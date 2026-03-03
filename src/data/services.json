@@ -1,0 +1,148 @@
+{
+  "headline": "¿Tienes una idea? La hago realidad.",
+  "subheadline": "Desarrollo soluciones web a medida para startups, empresas y emprendedores.",
+  "services": [
+    {
+      "id": "web-app",
+      "icon": "monitor",
+      "title": "Aplicaciones Web",
+      "shortDescription": "SPAs, dashboards y plataformas web completas con React y Next.js.",
+      "description": "Desarrollo aplicaciones web modernas, rápidas y escalables. Desde SPAs hasta plataformas complejas con autenticación, base de datos y panel de administración.",
+      "features": [
+        "Frontend con React / Next.js / Vue.js",
+        "Backend con Node.js o Python",
+        "Base de datos SQL o NoSQL",
+        "Autenticación y autorización",
+        "Panel de administración",
+        "Deploy y configuración en la nube"
+      ],
+      "timeEstimate": "4 - 12 semanas",
+      "highlight": true
+    },
+    {
+      "id": "ecommerce",
+      "icon": "shopping-cart",
+      "title": "E-Commerce",
+      "shortDescription": "Tiendas online completas con carrito, pagos y gestión de productos.",
+      "description": "Construyo tiendas online personalizadas con todas las funcionalidades que necesitas: catálogo, carrito, pasarela de pagos, gestión de órdenes y más.",
+      "features": [
+        "Catálogo de productos con filtros",
+        "Carrito de compras y checkout",
+        "Integración con Stripe / MercadoPago",
+        "Panel de gestión de productos y órdenes",
+        "Notificaciones por email",
+        "Integración con sistemas de envío"
+      ],
+      "timeEstimate": "6 - 10 semanas",
+      "highlight": false
+    },
+    {
+      "id": "api",
+      "icon": "code-2",
+      "title": "APIs & Backends",
+      "shortDescription": "APIs REST o GraphQL robustas, seguras y bien documentadas.",
+      "description": "Diseño e implemento APIs escalables siguiendo mejores prácticas. Perfectas para alimentar tus apps móviles, frontends o integraciones con terceros.",
+      "features": [
+        "API REST o GraphQL",
+        "Autenticación JWT / OAuth2",
+        "Documentación con Swagger",
+        "Rate limiting y seguridad",
+        "Tests unitarios e integración",
+        "Deploy con Docker / AWS / Vercel"
+      ],
+      "timeEstimate": "2 - 8 semanas",
+      "highlight": false
+    },
+    {
+      "id": "landing",
+      "icon": "layout",
+      "title": "Landing Pages",
+      "shortDescription": "Páginas de aterrizaje optimizadas para conversión y SEO.",
+      "description": "Creo landing pages modernas, rápidas y optimizadas para convertir visitantes en clientes. Diseño responsive con foco en UX y velocidad de carga.",
+      "features": [
+        "Diseño moderno y personalizado",
+        "100% responsive (mobile-first)",
+        "Optimización SEO técnica",
+        "Formularios de contacto",
+        "Integración con Google Analytics",
+        "Core Web Vitals optimizados"
+      ],
+      "timeEstimate": "1 - 3 semanas",
+      "highlight": false
+    },
+    {
+      "id": "consulting",
+      "icon": "lightbulb",
+      "title": "Consultoría Tech",
+      "shortDescription": "Asesoría técnica para definir arquitectura, tecnologías y roadmap.",
+      "description": "¿No sabes por dónde empezar o qué tecnologías elegir? Te ayudo a definir la arquitectura ideal para tu proyecto, revisar código existente y trazar un roadmap realista.",
+      "features": [
+        "Análisis de requerimientos",
+        "Selección de stack tecnológico",
+        "Diseño de arquitectura",
+        "Code review y auditoría",
+        "Definición de roadmap",
+        "Sesiones 1:1 por videollamada"
+      ],
+      "timeEstimate": "Sesiones flexibles",
+      "highlight": false
+    },
+    {
+      "id": "maintenance",
+      "icon": "wrench",
+      "title": "Mantenimiento",
+      "shortDescription": "Soporte continuo, actualizaciones y mejoras para proyectos existentes.",
+      "description": "Ofrezco planes de mantenimiento mensual para mantener tu aplicación actualizada, segura y con nuevas funcionalidades a medida que tu negocio crece.",
+      "features": [
+        "Monitoreo y uptime",
+        "Actualizaciones de dependencias",
+        "Corrección de bugs",
+        "Mejoras de rendimiento",
+        "Backups y seguridad",
+        "Soporte por chat/email"
+      ],
+      "timeEstimate": "Plan mensual",
+      "highlight": false
+    }
+  ],
+  "process": [
+    {
+      "step": 1,
+      "title": "Consulta inicial",
+      "description": "Conversamos sobre tu idea, necesidades y objetivos. Sin compromiso."
+    },
+    {
+      "step": 2,
+      "title": "Propuesta",
+      "description": "Te envío una propuesta detallada con alcance, tecnologías, tiempo y costo."
+    },
+    {
+      "step": 3,
+      "title": "Desarrollo",
+      "description": "Trabajo en sprints con entregas frecuentes para que veas el progreso."
+    },
+    {
+      "step": 4,
+      "title": "Entrega",
+      "description": "Deploy, documentación y soporte post-lanzamiento incluido."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cuánto cuesta un proyecto?",
+      "answer": "El costo depende del alcance y complejidad. Una landing page puede partir desde $500 USD, mientras que una plataforma completa puede variar entre $3.000 y $15.000 USD. Contáctame para una cotización personalizada."
+    },
+    {
+      "question": "¿Cuánto tiempo tarda un proyecto?",
+      "answer": "Una landing simple puede estar lista en 1-2 semanas. Una aplicación web completa puede tomar entre 2 y 4 meses dependiendo de los requisitos."
+    },
+    {
+      "question": "¿Trabajas de forma remota?",
+      "answer": "Sí, trabajo 100% remoto y estoy acostumbrado a trabajar con clientes de distintos países y zonas horarias."
+    },
+    {
+      "question": "¿Qué incluye el soporte post-lanzamiento?",
+      "answer": "Incluyo 30 días de soporte gratuito tras el lanzamiento para corregir cualquier bug o ajuste menor."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": "frontend",
+      "label": "Frontend",
+      "skills": [
+        { "name": "React", "icon": "react", "level": 90 },
+        { "name": "TypeScript", "icon": "typescript", "level": 85 },
+        { "name": "Next.js", "icon": "nextjs", "level": 80 },
+        { "name": "TailwindCSS", "icon": "tailwind", "level": 90 },
+        { "name": "HTML5", "icon": "html5", "level": 95 },
+        { "name": "CSS3", "icon": "css3", "level": 90 },
+        { "name": "JavaScript", "icon": "javascript", "level": 90 },
+        { "name": "Vue.js", "icon": "vue", "level": 70 },
+        { "name": "Framer Motion", "icon": "framer", "level": 75 }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "Backend",
+      "skills": [
+        { "name": "Node.js", "icon": "nodejs", "level": 85 },
+        { "name": "Express", "icon": "express", "level": 80 },
+        { "name": "NestJS", "icon": "nestjs", "level": 75 },
+        { "name": "Python", "icon": "python", "level": 70 },
+        { "name": "REST APIs", "icon": "api", "level": 90 },
+        { "name": "GraphQL", "icon": "graphql", "level": 65 }
+      ]
+    },
+    {
+      "id": "database",
+      "label": "Bases de Datos",
+      "skills": [
+        { "name": "PostgreSQL", "icon": "postgresql", "level": 80 },
+        { "name": "MongoDB", "icon": "mongodb", "level": 75 },
+        { "name": "MySQL", "icon": "mysql", "level": 80 },
+        { "name": "Redis", "icon": "redis", "level": 65 },
+        { "name": "Prisma", "icon": "prisma", "level": 75 }
+      ]
+    },
+    {
+      "id": "devops",
+      "label": "DevOps & Tools",
+      "skills": [
+        { "name": "Git", "icon": "git", "level": 90 },
+        { "name": "Docker", "icon": "docker", "level": 75 },
+        { "name": "GitHub Actions", "icon": "github", "level": 70 },
+        { "name": "AWS", "icon": "aws", "level": 60 },
+        { "name": "Vercel", "icon": "vercel", "level": 85 },
+        { "name": "Linux", "icon": "linux", "level": 70 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "type": "work",
+      "title": "Senior Frontend Developer",
+      "company": "Tech Company S.A.",
+      "location": "Ciudad, País",
+      "startDate": "2023-01",
+      "endDate": null,
+      "current": true,
+      "description": "Desarrollo de aplicaciones web empresariales con React y TypeScript. Liderazgo técnico del equipo frontend.",
+      "longDescription": "Responsable del desarrollo y mantenimiento de la plataforma principal de la empresa, usada por más de 50.000 usuarios activos. Lideré la migración de una aplicación legacy a React con TypeScript, reduciendo los bugs en producción en un 60%.\n\nImplementé un design system interno reutilizable, establecí estándares de código y mentoreé a 2 desarrolladores junior. Trabajé en estrecha colaboración con el equipo de diseño UX/UI y product managers.",
+      "technologies": ["React", "TypeScript", "Redux Toolkit", "TailwindCSS", "Jest", "Storybook"],
+      "achievements": [
+        "Reduje el tiempo de carga de la app en un 45% mediante code splitting y lazy loading",
+        "Implementé un design system adoptado por toda la empresa",
+        "Lideré la migración exitosa de JavaScript a TypeScript"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "work",
+      "title": "Fullstack Developer",
+      "company": "Startup XYZ",
+      "location": "Remoto",
+      "startDate": "2021-06",
+      "endDate": "2022-12",
+      "current": false,
+      "description": "Desarrollo full-stack de plataforma SaaS. Construcción de APIs REST, dashboards y sistemas de autenticación.",
+      "longDescription": "Contribuí al desarrollo de una plataforma SaaS de gestión de recursos humanos desde cero. Fui responsable de diseñar e implementar la API REST con Node.js y Express, el sistema de autenticación con JWT y OAuth2, y múltiples módulos del dashboard frontend.\n\nTrabajé en un equipo ágil de 8 personas, participando en planning, code reviews y deploys semanales.",
+      "technologies": ["Node.js", "Express", "PostgreSQL", "React", "Docker", "AWS"],
+      "achievements": [
+        "Construí la API REST que da soporte a más de 200 clientes empresariales",
+        "Implementé el sistema de reportes que genera 1000+ PDFs diarios",
+        "Optimicé queries críticas reduciendo el tiempo de respuesta de 2s a 80ms"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "work",
+      "title": "Junior Web Developer",
+      "company": "Agencia Digital",
+      "location": "Ciudad, País",
+      "startDate": "2020-03",
+      "endDate": "2021-05",
+      "current": false,
+      "description": "Desarrollo de sitios web y e-commerce para clientes de distintos sectores.",
+      "longDescription": "Primer empleo profesional en desarrollo web. Trabajé en más de 15 proyectos web para clientes de retail, gastronomía y servicios profesionales.\n\nDesarrollé sitios web con WordPress, WooCommerce y proyectos custom con HTML, CSS y JavaScript vanilla. Aprendí metodologías de trabajo en equipo, gestión de proyectos y comunicación con clientes.",
+      "technologies": ["HTML", "CSS", "JavaScript", "WordPress", "PHP", "MySQL"],
+      "achievements": [
+        "Completé más de 15 proyectos web entregados a tiempo y dentro del presupuesto",
+        "Implementé tiendas e-commerce con integración de pasarelas de pago locales",
+        "Mejoré el rendimiento SEO de 5 clientes, incrementando su tráfico orgánico en promedio 80%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 4,
+      "type": "education",
+      "title": "Ingeniería en Sistemas / Informática",
+      "company": "Universidad Nacional",
+      "location": "Ciudad, País",
+      "startDate": "2017-03",
+      "endDate": "2021-12",
+      "current": false,
+      "description": "Carrera de ingeniería con enfoque en desarrollo de software, algoritmos y arquitecturas de sistemas.",
+      "longDescription": "Formación universitaria de 5 años con especialización en desarrollo de software. Durante la carrera desarrollé proyectos académicos en áreas de bases de datos, redes, inteligencia artificial y desarrollo web.\n\nTrabajo de grado: 'Plataforma web para gestión de turnos con reconocimiento facial' - Calificación: 9.5/10\n\nParticipé en hackathons universitarios, quedando en el top 3 en 2 oportunidades.",
+      "technologies": ["Java", "C++", "Python", "SQL", "Algoritmos", "Redes"],
+      "achievements": [
+        "Graduado con distinción académica",
+        "Trabajo de grado calificado 9.5/10",
+        "Top 3 en hackathon universitario regional"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "education",
+      "title": "Certificación AWS Cloud Practitioner",
+      "company": "Amazon Web Services",
+      "location": "Online",
+      "startDate": "2022-08",
+      "endDate": "2022-10",
+      "current": false,
+      "description": "Certificación oficial de AWS en fundamentos de computación en la nube y servicios AWS.",
+      "longDescription": "Obtención de la certificación AWS Certified Cloud Practitioner, que valida el conocimiento en los servicios fundamentales de AWS, arquitecturas de nube, seguridad y buenas prácticas.\n\nPreparación de 2 meses con cursos prácticos y laboratorios hands-on.",
+      "technologies": ["AWS EC2", "S3", "Lambda", "RDS", "CloudFront", "IAM"],
+      "achievements": [
+        "Score: 850/1000 en el examen de certificación",
+        "Completé 40+ horas de laboratorios prácticos"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "education",
+      "title": "Bootcamp Fullstack JavaScript",
+      "company": "Academia de Código",
+      "location": "Online",
+      "startDate": "2020-01",
+      "endDate": "2020-06",
+      "current": false,
+      "description": "Programa intensivo de 6 meses en desarrollo web fullstack con JavaScript moderno.",
+      "longDescription": "Bootcamp intensivo que cubría React, Node.js, bases de datos relacionales y no relacionales, y despliegue en la nube. Proyecto final: plataforma de reservas de canchas deportivas.\n\nAprendizaje acelerado con proyectos prácticos semanales y code reviews de instructores senior.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Git", "Heroku"],
+      "achievements": [
+        "Proyecto final evaluado como mejor del cohorte",
+        "Completé 800+ horas de práctica en 6 meses"
+      ]
+    }
+  ]
+}
