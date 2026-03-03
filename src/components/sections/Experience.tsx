@@ -210,7 +210,7 @@ export function Experience() {
   const eduItems = allItems.filter((i) => i.type === "education");
 
   return (
-    <section id="experience" className="section-padding bg-[#0F0F0F]">
+    <section id="experience" className="section-padding bg-alt">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         <SectionHeader
           tag="Trayectoria"
