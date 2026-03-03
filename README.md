@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Portfolio Web — Professional Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SPA estatica para portfolio profesional como Web Developer / Fullstack. Diseno dark mode moderno con gradiente naranja to morado, grilla asimetrica y animaciones fluidas.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19 + TypeScript** - UI y tipado estricto
+- **Vite 7** - bundler y dev server
+- **TailwindCSS v4** - estilos utility-first con tokens personalizados
+- **Framer Motion** - animaciones declarativas
+- **Lucide React** - iconos
+- **React Router v6** - navegacion SPA
 
-## React Compiler
+## Estructura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+ src/
+  assets/              # imagenes estaticas
+  components/
+    ui/                # Button, Badge, Modal, SectionHeader
+    layout/            # Navbar, Footer
+    sections/          # Hero, Skills, Projects, Experience, About, Services
+  config/theme.ts      # tokens de color, tipografia y animacion
+  data/                # *.json - toda la info del portfolio
+  hooks/               # useModal, useScrollSpy
+  pages/               # ServicesPage
+  types/               # interfaces TypeScript
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Personalizacion rapida
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Archivo | Contiene |
+|---------|----------|
+| src/data/personal.json | Nombre, bio, foto, links, CV |
+| src/data/projects.json | Proyectos (titulo, tech, URL, repo, detalles) |
+| src/data/skills.json | Habilidades agrupadas por categoria |
+| src/data/experience.json | Experiencia laboral y educacion |
+| src/data/services.json | Servicios freelance, proceso y FAQ |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Comandos
+
+```bash
+npm install        # instalar dependencias
+npm run dev        # dev server en http://localhost:5173
+npm run build      # build de produccion
+npm run preview    # preview del build
 ```
+
+## Personalizar perfil
+
+1. Reemplaza /public/profile.jpg con tu foto
+2. Coloca tu CV como /public/cv.pdf
+3. Edita src/data/personal.json con tus datos reales
+4. Actualiza los proyectos en src/data/projects.json
+5. Ajusta habilidades en src/data/skills.json
+
