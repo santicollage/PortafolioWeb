@@ -121,7 +121,7 @@ body {
 }
 
 .bg-alt {
-  background-color: #080808;
+  background-color: hsl(288, 60%, 3%);
 }
 
 .hero-grid {

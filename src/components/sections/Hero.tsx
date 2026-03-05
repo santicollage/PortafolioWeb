@@ -1,13 +1,13 @@
-import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download, MapPin, Circle } from "lucide-react";
-import personalData from "../../data/personal.json";
+import { motion } from 'framer-motion';
+import { Github, Linkedin, Mail, Download, MapPin, Circle } from 'lucide-react';
+import personalData from '../../data/personal.json';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" as const },
+    transition: { delay: i * 0.1, duration: 0.5, ease: 'easeOut' as const },
   }),
 };
 
@@ -21,13 +21,13 @@ export function Hero() {
         <div
           className="absolute top-1/4 -left-32 w-80 h-80 rounded-full opacity-20 blur-3xl"
           style={{
-            background: "radial-gradient(circle, #5919C2, transparent)",
+            background: 'radial-gradient(circle, #5919C2, transparent)',
           }}
         />
         <div
           className="absolute bottom-1/4 -right-32 w-80 h-80 rounded-full opacity-20 blur-3xl"
           style={{
-            background: "radial-gradient(circle, #F68237, transparent)",
+            background: 'radial-gradient(circle, #F68237, transparent)',
           }}
         />
       </div>
@@ -56,7 +56,7 @@ export function Hero() {
               animate="visible"
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight"
             >
-              Hola, soy{" "}
+              Hola, soy{' '}
               <span className="gradient-text">{personalData.firstName}</span>
             </motion.h1>
 
@@ -158,7 +158,7 @@ export function Hero() {
                   className="absolute inset-0 rounded-2xl blur-xl opacity-40"
                   style={{
                     background:
-                      "linear-gradient(135deg, #F68237, #5919C2, #361879)",
+                      'linear-gradient(135deg, #F68237, #5919C2, #361879)',
                   }}
                 />
                 <div className="relative w-full h-full rounded-2xl overflow-hidden border border-[#3A3A3A] bg-[#1F1F1F]">
@@ -168,7 +168,7 @@ export function Hero() {
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       const target = e.currentTarget;
-                      target.style.display = "none";
+                      target.style.display = 'none';
                       const parent = target.parentElement;
                       if (parent) {
                         parent.innerHTML = `<div class="w-full h-full flex items-center justify-center"><span class="text-8xl font-bold font-display gradient-text">${personalData.firstName[0]}</span></div>`;
@@ -182,7 +182,7 @@ export function Hero() {
                   transition={{
                     duration: 3,
                     repeat: Infinity,
-                    ease: "easeInOut",
+                    ease: 'easeInOut',
                   }}
                   className="absolute -top-4 -right-4 px-3 py-2 bg-[#1F1F1F] border border-[#3A3A3A] rounded-xl text-xs font-medium text-white shadow-xl"
                 >
@@ -193,7 +193,7 @@ export function Hero() {
                   transition={{
                     duration: 3.5,
                     repeat: Infinity,
-                    ease: "easeInOut",
+                    ease: 'easeInOut',
                     delay: 0.5,
                   }}
                   className="absolute -bottom-4 -left-4 px-3 py-2 bg-[#1F1F1F] border border-[#3A3A3A] rounded-xl text-xs font-medium text-white shadow-xl"
@@ -213,10 +213,10 @@ export function Hero() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4"
         >
           {[
-            { value: "3+", label: "Años de experiencia" },
-            { value: "20+", label: "Proyectos completados" },
-            { value: "15+", label: "Clientes satisfechos" },
-            { value: "100%", label: "Compromiso" },
+            { value: '3+', label: 'Años de experiencia' },
+            { value: '20+', label: 'Proyectos completados' },
+            { value: '15+', label: 'Clientes satisfechos' },
+            { value: '100%', label: 'Compromiso' },
           ].map((stat) => (
             <div
               key={stat.label}
