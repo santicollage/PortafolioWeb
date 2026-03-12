@@ -1,56 +1,66 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { SectionHeader } from "../ui/SectionHeader";
-import skillsData from "../../data/skills.json";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { SectionHeader } from '../ui/SectionHeader';
+import skillsData from '../../data/skills.json';
 
 const TECH_ICONS: Record<string, string> = {
   react:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
   typescript:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
   nextjs:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
   tailwind:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
   html5:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  css3: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+  css3: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   javascript:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-  vue: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+  sass: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
+  redux:
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
   framer:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg',
   nodejs:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
   express:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
   nestjs:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg',
   python:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
   graphql:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
   postgresql:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
   mongodb:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
   mysql:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
   redis:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
   prisma:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
-  git: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg',
+  git: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   docker:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
   github:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-  aws: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+  aws: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
   vercel:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg',
   linux:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-  api: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+  api: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+  jira: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
+  figma:
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+  npm: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
+  claude:
+    'https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/claude-color.png',
+  windsurf:
+    'https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/windsurf.png',
 };
 
 export function Skills() {
@@ -74,8 +84,8 @@ export function Skills() {
               onClick={() => setActiveTab(cat.id)}
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#5919C2] ${
                 activeTab === cat.id
-                  ? "gradient-bg text-white"
-                  : "bg-[#1F1F1F] text-[#A0A0A0] hover:text-white hover:bg-[#2C2C2C] border border-[#3A3A3A]"
+                  ? 'gradient-bg text-white'
+                  : 'bg-[#1F1F1F] text-[#A0A0A0] hover:text-white hover:bg-[#2C2C2C] border border-[#3A3A3A]'
               }`}
             >
               {cat.label}
@@ -107,7 +117,7 @@ export function Skills() {
                       className="w-10 h-10 object-contain"
                       loading="lazy"
                       onError={(e) => {
-                        e.currentTarget.style.display = "none";
+                        e.currentTarget.style.display = 'none';
                       }}
                     />
                   ) : (
@@ -126,7 +136,7 @@ export function Skills() {
                     transition={{
                       delay: index * 0.05 + 0.2,
                       duration: 0.6,
-                      ease: "easeOut",
+                      ease: 'easeOut',
                     }}
                     className="h-1 rounded-full gradient-bg"
                   />

@@ -11,7 +11,8 @@
         { "name": "HTML5", "icon": "html5", "level": 95 },
         { "name": "CSS3", "icon": "css3", "level": 90 },
         { "name": "JavaScript", "icon": "javascript", "level": 90 },
-        { "name": "Vue.js", "icon": "vue", "level": 70 },
+        { "name": "Sass", "icon": "sass", "level": 85 },
+        { "name": "Redux", "icon": "redux", "level": 80 },
         { "name": "Framer Motion", "icon": "framer", "level": 75 }
       ]
     },
@@ -47,7 +48,12 @@
         { "name": "GitHub Actions", "icon": "github", "level": 70 },
         { "name": "AWS", "icon": "aws", "level": 60 },
         { "name": "Vercel", "icon": "vercel", "level": 85 },
-        { "name": "Linux", "icon": "linux", "level": 70 }
+        { "name": "Linux", "icon": "linux", "level": 70 },
+        { "name": "Jira", "icon": "jira", "level": 85 },
+        { "name": "Figma", "icon": "figma", "level": 80 },
+        { "name": "npm", "icon": "npm", "level": 90 },
+        { "name": "Claude Code", "icon": "claude", "level": 85 },
+        { "name": "Windsurf", "icon": "windsurf", "level": 85 }
       ]
     }
   ]
