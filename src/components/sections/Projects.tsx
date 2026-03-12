@@ -8,7 +8,15 @@ import { useModal } from '../../hooks/useModal';
 import projectsData from '../../data/projects.json';
 import type { Project } from '../../types';
 
-function ProjectModal({ project, isOpen, onClose }: { project: Project; isOpen: boolean; onClose: () => void }) {
+function ProjectModal({
+  project,
+  isOpen,
+  onClose,
+}: {
+  project: Project;
+  isOpen: boolean;
+  onClose: () => void;
+}) {
   return (
     <Modal isOpen={isOpen} onClose={onClose} title={project.title} size="xl">
       <div className="space-y-6">
@@ -19,7 +27,8 @@ function ProjectModal({ project, isOpen, onClose }: { project: Project; isOpen: 
               alt={project.title}
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.currentTarget.parentElement!.innerHTML = `<div class="w-full h-full flex items-center justify-center text-4xl">🚀</div>`;
+                e.currentTarget.parentElement!.innerHTML =
+                  '<div class="w-full h-full flex items-center justify-center text-4xl">🚀</div>';
               }}
             />
           </div>
@@ -30,11 +39,15 @@ function ProjectModal({ project, isOpen, onClose }: { project: Project; isOpen: 
             <Badge label={project.category} variant="gradient" size="md" />
             <Badge label={String(project.year)} variant="outline" size="md" />
           </div>
-          <p className="text-[#A0A0A0] leading-relaxed whitespace-pre-line">{project.longDescription}</p>
+          <p className="text-[#A0A0A0] leading-relaxed whitespace-pre-line">
+            {project.longDescription}
+          </p>
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold text-[#6B6B6B] uppercase tracking-wider mb-3">Stack</h3>
+          <h3 className="text-sm font-semibold text-[#6B6B6B] uppercase tracking-wider mb-3">
+            Stack
+          </h3>
           <div className="flex flex-wrap gap-2">
             {project.tech.map((t) => (
               <Badge key={t} label={t} variant="default" size="md" />
@@ -44,14 +57,18 @@ function ProjectModal({ project, isOpen, onClose }: { project: Project; isOpen: 
 
         {project.challenges && (
           <div className="p-4 rounded-xl bg-[#2C2C2C] border border-[#3A3A3A]">
-            <h3 className="text-sm font-semibold text-[#F68237] mb-2">⚡ Desafío</h3>
+            <h3 className="text-sm font-semibold text-[#F68237] mb-2">
+              ⚡ Desafío
+            </h3>
             <p className="text-sm text-[#A0A0A0]">{project.challenges}</p>
           </div>
         )}
 
         {project.results && (
           <div className="p-4 rounded-xl bg-[#2C2C2C] border border-[#3A3A3A]">
-            <h3 className="text-sm font-semibold text-green-400 mb-2">✅ Resultados</h3>
+            <h3 className="text-sm font-semibold text-green-400 mb-2">
+              ✅ Resultados
+            </h3>
             <p className="text-sm text-[#A0A0A0]">{project.results}</p>
           </div>
         )}
@@ -103,7 +120,8 @@ function ProjectCard({ project }: { project: Project }) {
             alt={project.title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             onError={(e) => {
-              e.currentTarget.parentElement!.innerHTML = `<div class="w-full h-full flex items-center justify-center text-5xl bg-gradient-to-br from-[#1F1F1F] to-[#2C2C2C]">🚀</div>`;
+              e.currentTarget.parentElement!.innerHTML =
+                '<div class="w-full h-full flex items-center justify-center text-5xl bg-gradient-to-br from-[#1F1F1F] to-[#2C2C2C]">🚀</div>';
             }}
           />
           {project.featured && (
@@ -117,15 +135,23 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="flex flex-col flex-1 p-5 gap-3">
-          <h3 className="text-lg font-semibold text-white font-display">{project.title}</h3>
-          <p className="text-sm text-[#A0A0A0] leading-relaxed flex-1">{project.description}</p>
+          <h3 className="text-lg font-semibold text-white font-display">
+            {project.title}
+          </h3>
+          <p className="text-sm text-[#A0A0A0] leading-relaxed flex-1">
+            {project.description}
+          </p>
 
           <div className="flex flex-wrap gap-1.5">
             {project.tech.slice(0, 4).map((t) => (
               <Badge key={t} label={t} variant="default" size="sm" />
             ))}
             {project.tech.length > 4 && (
-              <Badge label={`+${project.tech.length - 4}`} variant="outline" size="sm" />
+              <Badge
+                label={`+${project.tech.length - 4}`}
+                variant="outline"
+                size="sm"
+              />
             )}
           </div>
 
@@ -173,8 +199,14 @@ function ProjectCard({ project }: { project: Project }) {
 
 export function Projects() {
   const [filter, setFilter] = useState('Todos');
-  const categories = ['Todos', ...Array.from(new Set(projectsData.map((p) => p.category)))];
-  const filtered = filter === 'Todos' ? projectsData : projectsData.filter((p) => p.category === filter);
+  const categories = [
+    'Todos',
+    ...Array.from(new Set(projectsData.map((p) => p.category))),
+  ];
+  const filtered =
+    filter === 'Todos'
+      ? projectsData
+      : projectsData.filter((p) => p.category === filter);
 
   return (
     <section id="projects" className="section-padding bg-[#0F0F0F]">
