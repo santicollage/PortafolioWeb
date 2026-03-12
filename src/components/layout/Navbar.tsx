@@ -84,7 +84,9 @@ export function Navbar() {
           </ul>
 
           <a
-            href={`mailto:${personalData.email}`}
+            href={`https://wa.me/${personalData.phone}?text=Hola%20${personalData.firstName},%0A%0AMe%20gustaría%20hablar%20contigo%20sobre%20una%20oportunidad%20de%20colaboración.%0A%0ASaludos`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium gradient-bg text-white hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[#5919C2] focus:ring-offset-2 focus:ring-offset-[#0F0F0F]"
           >
             Hablemos
@@ -129,7 +131,9 @@ export function Navbar() {
                 })}
                 <li className="pt-2">
                   <a
-                    href={`mailto:${personalData.email}`}
+                    href={`https://wa.me/${personalData.phone}?text=Hola%20${personalData.firstName},%0A%0AMe%20gustaría%20hablar%20contigo%20sobre%20una%20oportunidad%20de%20colaboración.%0A%0ASaludos`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full text-center px-4 py-2 rounded-xl text-sm font-medium gradient-bg text-white hover:opacity-90 transition-opacity"
                   >
                     Hablemos

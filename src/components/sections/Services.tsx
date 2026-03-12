@@ -1,6 +1,6 @@
-import type { ComponentType } from "react";
-import personalData from "../../data/personal.json";
-import { motion } from "framer-motion";
+import type { ComponentType } from 'react';
+import personalData from '../../data/personal.json';
+import { motion } from 'framer-motion';
 import {
   ArrowRight,
   Monitor,
@@ -11,18 +11,18 @@ import {
   Wrench,
   CheckCircle,
   Clock,
-} from "lucide-react";
-import { Link } from "react-router-dom";
-import { SectionHeader } from "../ui/SectionHeader";
-import servicesData from "../../data/services.json";
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { SectionHeader } from '../ui/SectionHeader';
+import servicesData from '../../data/services.json';
 
 const ICON_MAP: Record<
   string,
   ComponentType<{ size?: number; className?: string }>
 > = {
   monitor: Monitor,
-  "shopping-cart": ShoppingCart,
-  "code-2": Code2,
+  'shopping-cart': ShoppingCart,
+  'code-2': Code2,
   layout: Layout,
   lightbulb: Lightbulb,
   wrench: Wrench,
@@ -49,12 +49,12 @@ export function Services() {
                 key={service.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.5 }}
                 className="lg:col-span-12 group relative overflow-hidden rounded-2xl p-6 md:p-8 border border-[#3A3A3A] hover:border-[#5919C2]/60 transition-all duration-300"
                 style={{
                   background:
-                    "linear-gradient(135deg, #1F1F1F 0%, #2C2C2C 100%)",
+                    'linear-gradient(135deg, #1F1F1F 0%, #2C2C2C 100%)',
                 }}
               >
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 gradient-bg" />
@@ -104,7 +104,7 @@ export function Services() {
                 key={service.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: '-50px' }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 className="group p-5 rounded-2xl bg-[#1F1F1F] border border-[#2C2C2C] hover:border-[#5919C2]/40 transition-all duration-200 hover:-translate-y-0.5"
               >
@@ -129,7 +129,7 @@ export function Services() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.5 }}
           className="relative overflow-hidden rounded-2xl p-8 md:p-12 text-center gradient-bg"
         >
@@ -151,7 +151,9 @@ export function Services() {
                 <ArrowRight size={16} />
               </Link>
               <a
-                href={`mailto:${personalData.email}`}
+                href={`https://wa.me/${personalData.phone}?text=Hola%20${personalData.firstName},%0A%0AEstoy%20interesado%20en%20tus%20servicios%20de%20desarrollo%20web.%20Me%20gustaría%20discutir%20un%20proyecto%20que%20tengo%20en%20mente.%0A%0ASaludos`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-white/30 text-white font-semibold hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
               >
                 Enviar mensaje

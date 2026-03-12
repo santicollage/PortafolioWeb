@@ -9,10 +9,10 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <span className="text-xl font-bold font-display gradient-text">{'<Dev/>'}</span>
-            <p className="mt-1 text-sm text-[#6B6B6B]">
-              {personalData.title}
-            </p>
+            <span className="text-xl font-bold font-display gradient-text">
+              {'<Dev/>'}
+            </span>
+            <p className="mt-1 text-sm text-[#6B6B6B]">{personalData.title}</p>
           </div>
 
           <nav aria-label="Footer social links">
@@ -45,7 +45,9 @@ export function Footer() {
               )}
               <li>
                 <a
-                  href={`mailto:${personalData.email}`}
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalData.email}&su=Contacto%20desde%20Portfolio&body=Hola%20${personalData.firstName},%0A%0AMe%20gustaría%20ponerme%20en%20contacto%20contigo.%0A%0ASaludos,%0A[Tu%20nombre]`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Email"
                   className="p-2.5 rounded-xl bg-[#2C2C2C] text-[#A0A0A0] hover:text-white hover:bg-[#3A3A3A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#5919C2]"
                 >
@@ -57,7 +59,9 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-[#2C2C2C] flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-[#6B6B6B]">
-          <p>© {year} {personalData.name}. Todos los derechos reservados.</p>
+          <p>
+            © {year} {personalData.name}. Todos los derechos reservados.
+          </p>
           <p>Hecho con React + TypeScript + TailwindCSS</p>
         </div>
       </div>

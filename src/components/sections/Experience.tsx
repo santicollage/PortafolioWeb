@@ -1,33 +1,33 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import {
   Briefcase,
   GraduationCap,
   MapPin,
   Calendar,
   CheckCircle,
-} from "lucide-react";
-import { Modal } from "../ui/Modal";
-import { Badge } from "../ui/Badge";
-import { SectionHeader } from "../ui/SectionHeader";
-import { useModal } from "../../hooks/useModal";
-import experienceData from "../../data/experience.json";
-import type { ExperienceItem } from "../../types";
+} from 'lucide-react';
+import { Modal } from '../ui/Modal';
+import { Badge } from '../ui/Badge';
+import { SectionHeader } from '../ui/SectionHeader';
+import { useModal } from '../../hooks/useModal';
+import experienceData from '../../data/experience.json';
+import type { ExperienceItem } from '../../types';
 
 function formatDate(date: string): string {
-  const [year, month] = date.split("-");
+  const [year, month] = date.split('-');
   const months = [
-    "Ene",
-    "Feb",
-    "Mar",
-    "Abr",
-    "May",
-    "Jun",
-    "Jul",
-    "Ago",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dic",
+    'Ene',
+    'Feb',
+    'Mar',
+    'Abr',
+    'May',
+    'Jun',
+    'Jul',
+    'Ago',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dic',
   ];
   return `${months[parseInt(month) - 1]} ${year}`;
 }
@@ -47,7 +47,7 @@ function ExperienceModal({
         <div className="flex flex-wrap items-center gap-3">
           <span className="font-semibold text-white">{item.company}</span>
           <Badge
-            label={item.type === "work" ? "Trabajo" : "Educación"}
+            label={item.type === 'work' ? 'Trabajo' : 'Educación'}
             variant="gradient"
             size="sm"
           />
@@ -60,12 +60,12 @@ function ExperienceModal({
           </span>
           <span className="flex items-center gap-1.5">
             <Calendar size={14} />
-            {formatDate(item.startDate)} —{" "}
+            {formatDate(item.startDate)} —{' '}
             {item.current
-              ? "Actualidad"
+              ? 'Actualidad'
               : item.endDate
                 ? formatDate(item.endDate)
-                : ""}
+                : ''}
           </span>
         </div>
 
@@ -114,14 +114,14 @@ function ExperienceModal({
 
 function ExperienceCard({ item }: { item: ExperienceItem }) {
   const { isOpen, open, close } = useModal();
-  const isWork = item.type === "work";
+  const isWork = item.type === 'work';
 
   return (
     <>
       <motion.article
         initial={{ opacity: 0, x: isWork ? -20 : 20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
+        viewport={{ once: true, margin: '-50px' }}
         transition={{ duration: 0.5 }}
         className="group p-5 rounded-2xl bg-[#1F1F1F] border border-[#2C2C2C] hover:border-[#5919C2]/40 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
         onClick={open}
@@ -151,12 +151,12 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
             <div className="flex flex-wrap items-center gap-3 mt-2 text-xs text-[#6B6B6B]">
               <span className="flex items-center gap-1">
                 <Calendar size={12} />
-                {formatDate(item.startDate)} —{" "}
+                {formatDate(item.startDate)} —{' '}
                 {item.current
-                  ? "Actualidad"
+                  ? 'Actualidad'
                   : item.endDate
                     ? formatDate(item.endDate)
-                    : ""}
+                    : ''}
               </span>
               <span className="flex items-center gap-1">
                 <MapPin size={12} />
@@ -206,8 +206,8 @@ export function Experience() {
     ...experienceData.education,
   ] as ExperienceItem[];
 
-  const workItems = allItems.filter((i) => i.type === "work");
-  const eduItems = allItems.filter((i) => i.type === "education");
+  const workItems = allItems.filter((i) => i.type === 'work');
+  const eduItems = allItems.filter((i) => i.type === 'education');
 
   return (
     <section id="experience" className="section-padding bg-alt">

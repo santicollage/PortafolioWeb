@@ -123,7 +123,9 @@ export function Hero() {
                 </a>
               )}
               <a
-                href={`mailto:${personalData.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalData.email}&su=Contacto%20desde%20Portfolio%20-%20Inicio&body=Hola%20${personalData.firstName},%0A%0AMe%20gustaría%20ponerme%20en%20contacto%20contigo.%20He%20visto%20tu%20portfolio%20y%20me%20interesa%20conocer%20más%20sobre%20tu%20trabajo.%0A%0ASaludos,%0A[Tu%20nombre]`}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Correo electrónico"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#2C2C2C] hover:bg-[#3A3A3A] text-white text-sm font-medium border border-[#3A3A3A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#5919C2]"
               >
@@ -215,7 +217,7 @@ export function Hero() {
           {[
             { value: '3+', label: 'Años de experiencia' },
             { value: '20+', label: 'Proyectos completados' },
-            { value: '15+', label: 'Clientes satisfechos' },
+            { value: '10+', label: 'Clientes satisfechos' },
             { value: '100%', label: 'Compromiso' },
           ].map((stat) => (
             <div

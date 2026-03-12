@@ -1,5 +1,5 @@
-import type { ComponentType } from "react";
-import { motion } from "framer-motion";
+import type { ComponentType } from 'react';
+import { motion } from 'framer-motion';
 import {
   ArrowLeft,
   CheckCircle,
@@ -10,18 +10,18 @@ import {
   Layout,
   Lightbulb,
   Wrench,
-} from "lucide-react";
-import { Link } from "react-router-dom";
-import servicesData from "../data/services.json";
-import personalData from "../data/personal.json";
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
+import servicesData from '../data/services.json';
+import personalData from '../data/personal.json';
 
 const ICON_MAP: Record<
   string,
   ComponentType<{ size?: number; className?: string }>
 > = {
   monitor: Monitor,
-  "shopping-cart": ShoppingCart,
-  "code-2": Code2,
+  'shopping-cart': ShoppingCart,
+  'code-2': Code2,
   layout: Layout,
   lightbulb: Lightbulb,
   wrench: Wrench,
@@ -69,8 +69,8 @@ export function ServicesPage() {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 className={`p-6 rounded-2xl border transition-all duration-200 ${
                   service.highlight
-                    ? "gradient-border bg-[#1F1F1F]"
-                    : "bg-[#1F1F1F] border-[#2C2C2C] hover:border-[#5919C2]/40"
+                    ? 'gradient-border bg-[#1F1F1F]'
+                    : 'bg-[#1F1F1F] border-[#2C2C2C] hover:border-[#5919C2]/40'
                 }`}
               >
                 <div className="flex items-start gap-4 mb-4">
@@ -192,7 +192,9 @@ export function ServicesPage() {
               necesitas.
             </p>
             <a
-              href={`mailto:${personalData.email}`}
+              href={`https://wa.me/${personalData.phone}?text=Hola%20${personalData.firstName},%0A%0AMe%20gustaría%20solicitar%20una%20cotización%20para%20un%20proyecto%20de%20desarrollo%20web.%0A%0ASaludos`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-white text-[#0F0F0F] font-semibold hover:bg-white/90 transition-colors"
             >
               Contactar ahora

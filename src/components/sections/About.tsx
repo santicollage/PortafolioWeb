@@ -88,7 +88,9 @@ function AboutModal({
             </a>
           )}
           <a
-            href={`mailto:${personalData.email}`}
+            href={`https://wa.me/${personalData.phone}?text=Hola%20${personalData.firstName},%0A%0AHe%20leído%20tu%20perfil%20y%20me%20gustaría%20conocer%20más%20sobre%20tu%20experiencia%20y%20trayectoria%20profesional.%0A%0ASaludos`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-1 text-center py-2 rounded-xl bg-[#2C2C2C] border border-[#3A3A3A] text-white text-sm font-medium hover:bg-[#3A3A3A] transition-colors"
           >
             Escribirme
