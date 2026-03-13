@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "NPS Diesel E-Commerce Frontend",
+    "title": "NPS Diesel E-Commerce Platform",
     "description": "Aplicación web de e-commerce con admin dashboard, sistema de carrito y checkout, landing con animaciones y parallax, completamente responsive.",
     "longDescription": "Frontend de la plataforma de comercio electrónico para NPS Diesel S.A.S., desarrollado con React y arquitectura moderna de componentes.\n\nCaracterísticas destacadas:\n\n• Admin Dashboard con visualización de datos operativos, gráficos de ventas y métricas de productos\n• Sistema de carrito de compras y proceso de checkout integrado con pasarela de pagos\n• Landing page con animaciones fluidas y efectos parallax para mejorar la experiencia visual\n• Diseño completamente responsive optimizado para dispositivos móviles y tablets\n• Consumo de API REST con manejo de estado global mediante Redux\n• Arquitectura de estilos con Sass utilizando metodología BEM\n• Sistema de autenticación con roles diferenciados (cliente/administrador)\n• Catálogo de productos con filtros, búsqueda y paginación\n\nLa aplicación mantiene coherencia con el branding visual de la empresa y ofrece una experiencia de usuario optimizada tanto para clientes como para administradores.",
     "image": "/projects/nps-diesel.png",

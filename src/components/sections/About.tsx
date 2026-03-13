@@ -105,7 +105,10 @@ export function About() {
   const { isOpen, open, close } = useModal();
 
   return (
-    <section id="about" className="section-padding bg-[#0F0F0F]">
+    <section
+      id="about"
+      className="section-padding bg-[#0F0F0F] border-b border-[#2C2C2C]"
+    >
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         <SectionHeader tag="Acerca de" title="Sobre" highlight="Mí" />
 

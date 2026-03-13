@@ -4,6 +4,7 @@ import { ExternalLink, Github, Info, Globe } from 'lucide-react';
 import { Modal } from '../ui/Modal';
 import { Badge } from '../ui/Badge';
 import { SectionHeader } from '../ui/SectionHeader';
+import { AnimatedBackground } from '../ui/AnimatedBackground';
 import { useModal } from '../../hooks/useModal';
 import projectsData from '../../data/projects.json';
 import type { Project } from '../../types';
@@ -209,8 +210,12 @@ export function Projects() {
       : projectsData.filter((p) => p.category === filter);
 
   return (
-    <section id="projects" className="section-padding bg-[#0F0F0F]">
-      <div className="max-w-6xl mx-auto px-4 md:px-8">
+    <section
+      id="projects"
+      className="relative section-padding bg-[#0F0F0F] overflow-hidden"
+    >
+      <AnimatedBackground />
+      <div className="relative max-w-6xl mx-auto px-4 md:px-8 z-10">
         <SectionHeader
           tag="Portafolio"
           title="Proyectos"

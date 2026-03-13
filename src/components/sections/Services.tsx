@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SectionHeader } from '../ui/SectionHeader';
+import { AnimatedBackground } from '../ui/AnimatedBackground';
 import servicesData from '../../data/services.json';
 
 const ICON_MAP: Record<
@@ -33,8 +34,12 @@ export function Services() {
   const rest = servicesData.services.filter((s) => !s.highlight);
 
   return (
-    <section id="services" className="section-padding bg-[#0F0F0F]">
-      <div className="max-w-6xl mx-auto px-4 md:px-8">
+    <section
+      id="services"
+      className="relative section-padding bg-[#0F0F0F] overflow-hidden"
+    >
+      <AnimatedBackground />
+      <div className="relative max-w-6xl mx-auto px-4 md:px-8 z-10">
         <SectionHeader
           tag="Servicios"
           title={servicesData.headline}

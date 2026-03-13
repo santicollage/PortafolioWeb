@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-bg-primary: #0f0f0f;
@@ -19,8 +19,8 @@
   --color-grad-8: #4215a8;
   --color-grad-9: #361879;
 
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
 
   --radius-2xl: 1rem;
   --radius-3xl: 1.5rem;
@@ -33,7 +33,7 @@ html {
 body {
   background-color: #0f0f0f;
   color: #ffffff;
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
@@ -73,7 +73,7 @@ body {
   position: relative;
 }
 .gradient-border::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
@@ -129,4 +129,126 @@ body {
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
+}
+
+.bubble {
+  position: absolute;
+  background: linear-gradient(115deg, #f68237 0%, #5919c2 100%);
+  opacity: 0.6;
+  filter: blur(10px);
+  box-shadow: 0 0 60px rgba(89, 25, 194, 0.5);
+}
+
+.bubble-1 {
+  width: 62vw;
+  height: 80vh;
+  top: -200px;
+  left: -100px;
+  animation: flow 8s linear infinite;
+}
+
+.bubble-2 {
+  width: 35vw;
+  height: 50vh;
+  top: 10%;
+  right: -44px;
+  animation: flow 10s linear infinite;
+}
+
+.bubble-3 {
+  width: 43vw;
+  height: 61vh;
+  bottom: -157px;
+  left: 43px;
+  animation: flow 13s linear infinite;
+}
+
+.bubble-4 {
+  width: 15vw;
+  height: 22vh;
+  bottom: 42px;
+  right: 190px;
+  animation: flow 5s linear infinite;
+}
+
+.bubble-5 {
+  width: 28vw;
+  height: 38vh;
+  top: 35%;
+  left: 30%;
+  animation: flow 11s linear infinite;
+}
+
+.bubble-6 {
+  width: 27vw;
+  height: 33vh;
+  top: 59%;
+  right: 16%;
+  animation: flow 9s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    border-radius: 25% 75% 32% 68% / 43% 59% 41% 57%;
+  }
+  50% {
+    border-radius: 60% 40% 62% 38% / 56% 32% 68% 44%;
+  }
+  100% {
+    border-radius: 25% 75% 32% 68% / 43% 59% 41% 57%;
+  }
+}
+
+@media (max-width: 650px) {
+  .bubble-1 {
+    width: 65vw;
+    height: 45vh;
+  }
+  .bubble-2 {
+    height: 30vh;
+    top: 26%;
+  }
+  .bubble-3 {
+    width: 50vw;
+    height: 55vh;
+  }
+  .bubble-4 {
+    width: 14vw;
+    height: 14vh;
+    bottom: 60px;
+    right: 105px;
+  }
+  .bubble-5 {
+    width: 35vw;
+    height: 40vh;
+  }
+  .bubble-6 {
+    width: 28vw;
+    height: 32vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .bubble-1 {
+    width: 77vw;
+    height: 45vh;
+  }
+  .bubble-2 {
+    width: 53vw;
+    height: 34vh;
+    top: 26%;
+  }
+  .bubble-3 {
+    width: 89vw;
+    height: 55vh;
+    left: -7px;
+  }
+  .bubble-5 {
+    width: 45vw;
+    height: 42vh;
+  }
+  .bubble-6 {
+    width: 35vw;
+    height: 35vh;
+  }
 }
