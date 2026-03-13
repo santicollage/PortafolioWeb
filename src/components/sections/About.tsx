@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { User, MapPin, Heart, Code2 } from 'lucide-react';
+import { User, MapPin, Sparkles, Code2 } from 'lucide-react';
 import { Modal } from '../ui/Modal';
 import { SectionHeader } from '../ui/SectionHeader';
 import { useModal } from '../../hooks/useModal';
@@ -7,8 +7,8 @@ import personalData from '../../data/personal.json';
 
 const highlights = [
   { icon: Code2, label: 'Clean Code', desc: 'Código limpio y mantenible' },
-  { icon: Heart, label: 'Pasión', desc: 'Apasionado por la tecnología' },
-  { icon: MapPin, label: 'Remoto', desc: 'Trabajo 100% remoto' },
+  { icon: Sparkles, label: 'UX', desc: 'Experiencia de usuario intuitiva' },
+  { icon: MapPin, label: 'Remoto', desc: 'Colaboración a distancia' },
   { icon: User, label: 'Colaboración', desc: 'Comunicación fluida' },
 ];
 
@@ -162,7 +162,7 @@ export function About() {
 
             <div className="p-6 rounded-2xl bg-[#1F1F1F] border border-[#2C2C2C]">
               <p className="text-[#A0A0A0] leading-relaxed line-clamp-4">
-                {personalData.bioExtended.split('\n\n')[0]}
+                {personalData.bioExtended.split('\n\n')[1]}
               </p>
             </div>
 
