@@ -3,109 +3,126 @@
     {
       "id": 1,
       "type": "work",
-      "title": "Senior Frontend Developer",
-      "company": "Tech Company S.A.",
-      "location": "Ciudad, País",
-      "startDate": "2023-01",
+      "title": "Desarrollador Fullstack (Freelance)",
+      "company": "Proyectos Independientes",
+      "location": "Remoto",
+      "startDate": "2025-08",
       "endDate": null,
       "current": true,
-      "description": "Desarrollo de aplicaciones web empresariales con React y TypeScript. Liderazgo técnico del equipo frontend.",
-      "longDescription": "Responsable del desarrollo y mantenimiento de la plataforma principal de la empresa, usada por más de 50.000 usuarios activos. Lideré la migración de una aplicación legacy a React con TypeScript, reduciendo los bugs en producción en un 60%.\n\nImplementé un design system interno reutilizable, establecí estándares de código y mentoreé a 2 desarrolladores junior. Trabajé en estrecha colaboración con el equipo de diseño UX/UI y product managers.",
-      "technologies": ["React", "TypeScript", "Redux Toolkit", "TailwindCSS", "Jest", "Storybook"],
+      "description": "Desarrollo de aplicaciones web fullstack usando Next.js, NestJS y PostgreSQL. Especialización en plataformas e-commerce completas.",
+      "longDescription": "Desarrollo de soluciones web end-to-end para clientes que requieren plataformas de comercio electrónico funcionales y escalables. Mi trabajo abarca desde el análisis de requerimientos hasta el despliegue en producción, pasando por el diseño de arquitectura, desarrollo frontend y backend, y configuración de infraestructura.\n\nEn el backend, diseño y construyo APIs REST robustas con NestJS y Prisma ORM, conectadas a bases de datos PostgreSQL. Implemento sistemas de autenticación y autorización con JWT, gestión de roles y permisos, validación de datos, manejo de errores centralizado y documentación con Swagger.\n\nEn el frontend, desarrollo interfaces modernas y responsivas con React, Next.js y Tailwind CSS, enfocándome en la experiencia de usuario, conversión y rendimiento. Implemento funcionalidades como carritos de compra, checkout con pasarelas de pago, dashboards administrativos con visualización de datos, y sistemas de gestión de catálogo.\n\nRealizo el despliegue completo de las aplicaciones en entornos productivos, configurando hosting, bases de datos, SSL, dominios y optimizaciones de rendimiento. Entrego soluciones llave en mano que permiten a los clientes operar y administrar sus negocios de forma autónoma.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "NestJS",
+        "Node.js",
+        "TypeScript",
+        "Prisma",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "JWT",
+        "Swagger"
+      ],
       "achievements": [
-        "Reduje el tiempo de carga de la app en un 45% mediante code splitting y lazy loading",
-        "Implementé un design system adoptado por toda la empresa",
-        "Lideré la migración exitosa de JavaScript a TypeScript"
+        "Desarrollé e implementé más de 3 plataformas e-commerce funcionales con gestión completa de catálogo, usuarios y flujo de compra",
+        "Implementé tiendas que generan ingresos recurrentes para distintas empresas, facilitando su operación comercial digital",
+        "Reduje tiempos de carga y mejoré la experiencia de usuario mediante optimizaciones frontend, lazy loading y buenas prácticas de desarrollo",
+        "Entregué soluciones end-to-end completas, permitiendo a los clientes administrar sus tiendas de forma autónoma sin dependencia técnica"
       ]
     },
     {
       "id": 2,
       "type": "work",
-      "title": "Fullstack Developer",
-      "company": "Startup XYZ",
+      "title": "Desarrollador Frontend",
+      "company": "Koptup",
       "location": "Remoto",
-      "startDate": "2021-06",
-      "endDate": "2022-12",
+      "startDate": "2023-08",
+      "endDate": "2025-11",
       "current": false,
-      "description": "Desarrollo full-stack de plataforma SaaS. Construcción de APIs REST, dashboards y sistemas de autenticación.",
-      "longDescription": "Contribuí al desarrollo de una plataforma SaaS de gestión de recursos humanos desde cero. Fui responsable de diseñar e implementar la API REST con Node.js y Express, el sistema de autenticación con JWT y OAuth2, y múltiples módulos del dashboard frontend.\n\nTrabajé en un equipo ágil de 8 personas, participando en planning, code reviews y deploys semanales.",
-      "technologies": ["Node.js", "Express", "PostgreSQL", "React", "Docker", "AWS"],
+      "description": "Desarrollo frontend para múltiples clientes en empresa de tercerización. Desarrollo principal de Flimp, plataforma B2B de Recursos Humanos.",
+      "longDescription": "Trabajé como desarrollador frontend en una empresa de tercerización de desarrollo web, atendiendo las necesidades de múltiples clientes corporativos. Mi rol principal fue el desarrollo de Flimp, una plataforma B2B SaaS utilizada por equipos de recursos humanos para crear campañas de comunicación, micrositios informativos y herramientas de soporte para beneficios de empleados.\n\nDesarrollé funcionalidades clave como la creación y administración de agentes de IA personalizados para empresas, permitiendo a los empleados obtener asistencia automatizada en procesos de beneficios, onboarding y eventos laborales. Estos agentes se integraron en distintos puntos de la plataforma, mejorando significativamente la experiencia de usuario.\n\nImplementé aplicaciones web con React, Next.js y Tailwind CSS en el frontend, y trabajé con PHP y Larabel en integraciones backend. Diseñé componentes reutilizables, escalables y mantenibles siguiendo principios de clean code y arquitectura modular.\n\nImplementé sistemas de autenticación y control de accesos con JWT, gestionando roles y permisos para diferentes tipos de usuarios. Participé activamente en análisis de requerimientos junto al equipo de producto, realicé code reviews para mantener la calidad del código, y contribuí a procesos de mejora continua del producto.\n\nImplementé pruebas unitarias y funcionales en el frontend utilizando Jest y React Testing Library, asegurando la estabilidad y confiabilidad de las funcionalidades desarrolladas. Trabajé bajo metodología Scrum con sprints de dos semanas, utilizando Jira para gestión de tareas y Bitbucket para control de versiones.",
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "PHP",
+        "Laravel",
+        "Jest",
+        "Jira",
+        "Bitbucket",
+        "JWT",
+        "Scrum"
+      ],
       "achievements": [
-        "Construí la API REST que da soporte a más de 200 clientes empresariales",
-        "Implementé el sistema de reportes que genera 1000+ PDFs diarios",
-        "Optimicé queries críticas reduciendo el tiempo de respuesta de 2s a 80ms"
-      ]
-    },
-    {
-      "id": 3,
-      "type": "work",
-      "title": "Junior Web Developer",
-      "company": "Agencia Digital",
-      "location": "Ciudad, País",
-      "startDate": "2020-03",
-      "endDate": "2021-05",
-      "current": false,
-      "description": "Desarrollo de sitios web y e-commerce para clientes de distintos sectores.",
-      "longDescription": "Primer empleo profesional en desarrollo web. Trabajé en más de 15 proyectos web para clientes de retail, gastronomía y servicios profesionales.\n\nDesarrollé sitios web con WordPress, WooCommerce y proyectos custom con HTML, CSS y JavaScript vanilla. Aprendí metodologías de trabajo en equipo, gestión de proyectos y comunicación con clientes.",
-      "technologies": ["HTML", "CSS", "JavaScript", "WordPress", "PHP", "MySQL"],
-      "achievements": [
-        "Completé más de 15 proyectos web entregados a tiempo y dentro del presupuesto",
-        "Implementé tiendas e-commerce con integración de pasarelas de pago locales",
-        "Mejoré el rendimiento SEO de 5 clientes, incrementando su tráfico orgánico en promedio 80%"
+        "Desarrollé módulos de agentes de IA utilizados por más de 20 empresas clientes, facilitando el acceso automatizado a información corporativa y soporte a empleados",
+        "Optimicé el tiempo de desarrollo mediante la implementación de una arquitectura frontend modular y sistema de componentes reutilizables",
+        "Reduje errores en producción gracias a la implementación de pruebas unitarias, validaciones de datos y code reviews sistemáticos",
+        "Mejoré la usabilidad y adopción de la plataforma a través de iteraciones continuas del producto basadas en feedback de usuarios y métricas de uso"
       ]
     }
   ],
   "education": [
     {
+      "id": 3,
+      "type": "education",
+      "title": "Formación en Desarrollo de Software",
+      "company": "Platzi",
+      "location": "Online",
+      "startDate": "2022-01",
+      "endDate": "2025-12",
+      "current": false,
+      "description": "Formación continua en desarrollo web frontend y fullstack con énfasis en tecnologías modernas de JavaScript y TypeScript.",
+      "longDescription": "Formación continua y especializada en desarrollo web frontend y fullstack a través de la plataforma Platzi, con énfasis en el ecosistema de JavaScript moderno y las mejores prácticas de la industria.\n\nLa formación abarcó un amplio espectro de tecnologías y conceptos fundamentales para el desarrollo web profesional. En el frontend, me especialicé en React y Next.js, aprendiendo desde los fundamentos de componentes y hooks hasta patrones avanzados de arquitectura, optimización de rendimiento, Server-Side Rendering (SSR) y Static Site Generation (SSG).\n\nEstudié JavaScript y TypeScript en profundidad, cubriendo ES6+, programación funcional, programación orientada a objetos, manejo asíncrono con Promises y async/await, y tipado estático para aplicaciones escalables. Aprendí HTML semántico y accesibilidad web (a11y), así como CSS moderno incluyendo Flexbox, Grid, animaciones y Tailwind CSS para desarrollo ágil de interfaces.\n\nEn el backend, trabajé con Node.js, Express y NestJS, aprendiendo a construir APIs REST robustas, implementar autenticación y autorización, diseñar arquitecturas escalables y aplicar principios SOLID y clean code. Estudié PostgreSQL y bases de datos relacionales, cubriendo diseño de esquemas, optimización de queries, transacciones y uso de ORMs como Prisma.\n\nAdemás, adquirí conocimientos en control de versiones con Git y GitHub, incluyendo flujos de trabajo colaborativos, branching strategies y resolución de conflictos. Aprendí fundamentos de testing con Jest y React Testing Library, metodologías ágiles (Scrum, Kanban) y buenas prácticas de desarrollo profesional.\n\nTodos los conocimientos fueron aplicados en proyectos prácticos y reales, permitiéndome desarrollar habilidades técnicas sólidas y experiencia práctica en el desarrollo de aplicaciones web modernas y escalables.",
+      "technologies": [
+        "React",
+        "Next.js",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Node.js",
+        "Express",
+        "NestJS",
+        "PostgreSQL",
+        "Prisma",
+        "Git",
+        "GitHub",
+        "Jest",
+        "Scrum"
+      ],
+      "achievements": [
+        "Completé más de 50 cursos especializados en desarrollo web frontend y fullstack",
+        "Desarrollé múltiples proyectos prácticos aplicando los conocimientos adquiridos en cada área de estudio",
+        "Adquirí experiencia práctica en el stack tecnológico completo utilizado en la industria actual",
+        "Mantuve formación continua actualizada con las últimas tendencias y mejores prácticas del desarrollo web"
+      ]
+    },
+    {
       "id": 4,
       "type": "education",
-      "title": "Ingeniería en Sistemas / Informática",
-      "company": "Universidad Nacional",
-      "location": "Ciudad, País",
-      "startDate": "2017-03",
-      "endDate": "2021-12",
+      "title": "Ingeniería Agrícola",
+      "company": "Universidad Nacional de Colombia",
+      "location": "Bogotá, Colombia",
+      "startDate": "2017-01",
+      "endDate": "2022-12",
       "current": false,
-      "description": "Carrera de ingeniería con enfoque en desarrollo de software, algoritmos y arquitecturas de sistemas.",
-      "longDescription": "Formación universitaria de 5 años con especialización en desarrollo de software. Durante la carrera desarrollé proyectos académicos en áreas de bases de datos, redes, inteligencia artificial y desarrollo web.\n\nTrabajo de grado: 'Plataforma web para gestión de turnos con reconocimiento facial' - Calificación: 9.5/10\n\nParticipé en hackathons universitarios, quedando en el top 3 en 2 oportunidades.",
-      "technologies": ["Java", "C++", "Python", "SQL", "Algoritmos", "Redes"],
+      "description": "Formación profesional orientada al análisis de datos, resolución de problemas complejos y gestión de proyectos.",
+      "longDescription": "Formación profesional universitaria en Ingeniería Agrícola en la Universidad Nacional de Colombia. Esta carrera me proporcionó una base sólida en análisis de datos, resolución de problemas complejos, planificación estratégica y gestión de proyectos.\n\nDurante la carrera desarrollé habilidades fundamentales en el enfoque analítico y metodológico para abordar problemas complejos, la toma de decisiones basada en datos y evidencia, la optimización de procesos y recursos, y el trabajo interdisciplinario con equipos diversos.\n\nLa formación incluyó un fuerte componente de pensamiento lógico y estructurado, análisis de requerimientos y especificaciones técnicas, documentación técnica y comunicación de resultados, y trabajo bajo metodologías estructuradas y orientadas a objetivos. Además, adquirí experiencia en gestión de proyectos desde la planificación hasta la ejecución y evaluación.\n\nDesarrollé habilidades transferibles al desarrollo de software como el pensamiento analítico y resolución sistemática de problemas, capacidad de aprender y adaptarse a nuevas tecnologías y dominios, enfoque orientado a resultados y optimización, trabajo colaborativo en equipos multidisciplinarios, y comunicación efectiva de conceptos técnicos complejos.\n\nEsta formación complementa mi perfil técnico en desarrollo de software, aportando una perspectiva única de análisis, planificación estratégica y gestión que me permite abordar proyectos de desarrollo con una visión integral y orientada a la solución de problemas reales de negocio.",
+      "technologies": [
+        "Análisis de Datos",
+        "Gestión de Proyectos",
+        "Resolución de Problemas",
+        "Planificación Estratégica",
+        "Optimización de Procesos",
+        "Metodologías Estructuradas"
+      ],
       "achievements": [
-        "Graduado con distinción académica",
-        "Trabajo de grado calificado 9.5/10",
-        "Top 3 en hackathon universitario regional"
-      ]
-    },
-    {
-      "id": 5,
-      "type": "education",
-      "title": "Certificación AWS Cloud Practitioner",
-      "company": "Amazon Web Services",
-      "location": "Online",
-      "startDate": "2022-08",
-      "endDate": "2022-10",
-      "current": false,
-      "description": "Certificación oficial de AWS en fundamentos de computación en la nube y servicios AWS.",
-      "longDescription": "Obtención de la certificación AWS Certified Cloud Practitioner, que valida el conocimiento en los servicios fundamentales de AWS, arquitecturas de nube, seguridad y buenas prácticas.\n\nPreparación de 2 meses con cursos prácticos y laboratorios hands-on.",
-      "technologies": ["AWS EC2", "S3", "Lambda", "RDS", "CloudFront", "IAM"],
-      "achievements": [
-        "Score: 850/1000 en el examen de certificación",
-        "Completé 40+ horas de laboratorios prácticos"
-      ]
-    },
-    {
-      "id": 6,
-      "type": "education",
-      "title": "Bootcamp Fullstack JavaScript",
-      "company": "Academia de Código",
-      "location": "Online",
-      "startDate": "2020-01",
-      "endDate": "2020-06",
-      "current": false,
-      "description": "Programa intensivo de 6 meses en desarrollo web fullstack con JavaScript moderno.",
-      "longDescription": "Bootcamp intensivo que cubría React, Node.js, bases de datos relacionales y no relacionales, y despliegue en la nube. Proyecto final: plataforma de reservas de canchas deportivas.\n\nAprendizaje acelerado con proyectos prácticos semanales y code reviews de instructores senior.",
-      "technologies": ["React", "Node.js", "MongoDB", "Express", "Git", "Heroku"],
-      "achievements": [
-        "Proyecto final evaluado como mejor del cohorte",
-        "Completé 800+ horas de práctica en 6 meses"
+        "Desarrollé habilidades analíticas y de resolución de problemas aplicables al desarrollo de software",
+        "Adquirí experiencia en gestión de proyectos y trabajo interdisciplinario",
+        "Formé capacidad de análisis de requerimientos y documentación técnica",
+        "Desarrollé pensamiento lógico y estructurado fundamental para la programación"
       ]
     }
   ]
