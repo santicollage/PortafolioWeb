@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useScrollSpy } from '../../hooks/useScrollSpy';
 import personalData from '../../data/personal.json';
 
@@ -25,6 +26,9 @@ const SECTION_IDS = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isServicesPage = location.pathname === '/services';
   const activeSection = useScrollSpy(SECTION_IDS);
 
   useEffect(() => {
@@ -37,6 +41,14 @@ export function Navbar() {
     setMobileOpen(false);
     const id = href.replace('#', '');
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleLogoClick = () => {
+    if (isServicesPage) {
+      navigate('/');
+    } else {
+      handleNavClick('#hero');
+    }
   };
 
   return (
@@ -56,32 +68,34 @@ export function Navbar() {
       >
         <div className="flex items-center justify-between">
           <button
-            onClick={() => handleNavClick('#hero')}
+            onClick={handleLogoClick}
             className="text-lg font-bold font-display gradient-text focus:outline-none focus:ring-2 focus:ring-[#5919C2] rounded-lg px-1"
             aria-label="Ir al inicio"
           >
             {'<Santicollage/>'}
           </button>
 
-          <ul className="hidden md:flex items-center gap-1" role="list">
-            {NAV_LINKS.map((link) => {
-              const isActive = activeSection === link.href.replace('#', '');
-              return (
-                <li key={link.href}>
-                  <button
-                    onClick={() => handleNavClick(link.href)}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#5919C2] ${
-                      isActive
-                        ? 'text-white bg-[#2C2C2C]'
-                        : 'text-[#A0A0A0] hover:text-white hover:bg-[#2C2C2C]'
-                    }`}
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
+          {!isServicesPage && (
+            <ul className="hidden md:flex items-center gap-1" role="list">
+              {NAV_LINKS.map((link) => {
+                const isActive = activeSection === link.href.replace('#', '');
+                return (
+                  <li key={link.href}>
+                    <button
+                      onClick={() => handleNavClick(link.href)}
+                      className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#5919C2] ${
+                        isActive
+                          ? 'text-white bg-[#2C2C2C]'
+                          : 'text-[#A0A0A0] hover:text-white hover:bg-[#2C2C2C]'
+                      }`}
+                    >
+                      {link.label}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
 
           <a
             href={`https://wa.me/${personalData.phone}?text=Hola%20${personalData.firstName},%0A%0AMe%20gustaría%20hablar%20contigo%20sobre%20una%20oportunidad%20de%20colaboración.%0A%0ASaludos`}
@@ -107,29 +121,30 @@ export function Navbar() {
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
               className="md:hidden overflow-hidden"
             >
               <ul className="pt-3 pb-1 space-y-1" role="list">
-                {NAV_LINKS.map((link) => {
-                  const isActive = activeSection === link.href.replace('#', '');
-                  return (
-                    <li key={link.href}>
-                      <button
-                        onClick={() => handleNavClick(link.href)}
-                        className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-[#5919C2] ${
-                          isActive
-                            ? 'text-white bg-[#2C2C2C]'
-                            : 'text-[#A0A0A0] hover:text-white hover:bg-[#2C2C2C]'
-                        }`}
-                      >
-                        {link.label}
-                      </button>
-                    </li>
-                  );
-                })}
-                <li className="pt-2">
+                {!isServicesPage &&
+                  NAV_LINKS.map((link) => {
+                    const isActive =
+                      activeSection === link.href.replace('#', '');
+                    return (
+                      <li key={link.href}>
+                        <button
+                          onClick={() => handleNavClick(link.href)}
+                          className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-[#5919C2] ${
+                            isActive
+                              ? 'text-white bg-[#2C2C2C]'
+                              : 'text-[#A0A0A0] hover:text-white hover:bg-[#2C2C2C]'
+                          }`}
+                        >
+                          {link.label}
+                        </button>
+                      </li>
+                    );
+                  })}
+                <li className={!isServicesPage ? 'pt-2' : ''}>
                   <a
                     href={`https://wa.me/${personalData.phone}?text=Hola%20${personalData.firstName},%0A%0AMe%20gustaría%20hablar%20contigo%20sobre%20una%20oportunidad%20de%20colaboración.%0A%0ASaludos`}
                     target="_blank"

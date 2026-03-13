@@ -23,15 +23,15 @@
       "id": "ecommerce",
       "icon": "shopping-cart",
       "title": "E-Commerce",
-      "shortDescription": "Tiendas online completas con carrito, pagos y gestión de productos.",
+      "shortDescription": "Tiendas online completas con carrito, pagos, gestión de productos y órdenes, dashboards y métricas.",
       "description": "Construyo tiendas online personalizadas con todas las funcionalidades que necesitas: catálogo, carrito, pasarela de pagos, gestión de órdenes y más.",
       "features": [
         "Catálogo de productos con filtros",
         "Carrito de compras y checkout",
-        "Integración con Stripe / MercadoPago",
+        "Integración con Wompi / MercadoPago",
         "Panel de gestión de productos y órdenes",
         "Notificaciones por email",
-        "Integración con sistemas de envío"
+        "Dashboards y métricas"
       ],
       "timeEstimate": "6 - 10 semanas",
       "highlight": false
@@ -130,11 +130,11 @@
   "faq": [
     {
       "question": "¿Cuánto cuesta un proyecto?",
-      "answer": "El costo depende del alcance y complejidad. Una landing page puede partir desde $500 USD, mientras que una plataforma completa puede variar entre $3.000 y $15.000 USD. Contáctame para una cotización personalizada."
+      "answer": "El costo depende del alcance y complejidad. Una landing page puede partir desde $200 USD, mientras que una plataforma completa puede variar entre $1.800 y $15.000 USD. Contáctame para una cotización personalizada."
     },
     {
       "question": "¿Cuánto tiempo tarda un proyecto?",
-      "answer": "Una landing simple puede estar lista en 1-2 semanas. Una aplicación web completa puede tomar entre 2 y 4 meses dependiendo de los requisitos."
+      "answer": "Una landing simple puede estar lista en 1-2 semanas. Una aplicación web completa puede tomar entre 2 y 6 meses dependiendo de los requisitos."
     },
     {
       "question": "¿Trabajas de forma remota?",

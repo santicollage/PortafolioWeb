@@ -9,6 +9,7 @@ import { About } from './components/sections/About';
 import { Services } from './components/sections/Services';
 import { ServicesPage } from './pages/ServicesPage';
 import { ScrollToTop } from './components/ui/ScrollToTop';
+import { ScrollToTopOnMount } from './components/ui/ScrollToTopOnMount';
 
 function PortfolioHome() {
   return (
@@ -31,6 +32,7 @@ function PortfolioHome() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTopOnMount />
       <Routes>
         <Route path="/" element={<PortfolioHome />} />
         <Route
