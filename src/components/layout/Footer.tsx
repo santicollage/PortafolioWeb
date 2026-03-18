@@ -26,7 +26,7 @@ export function Footer() {
                     aria-label="GitHub"
                     className="p-2.5 rounded-xl bg-[#2C2C2C] text-[#A0A0A0] hover:text-white hover:bg-[#3A3A3A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#5919C2]"
                   >
-                    <Github size={18} />
+                    <Github className="inline" size={18} />
                   </a>
                 </li>
               )}
@@ -39,7 +39,7 @@ export function Footer() {
                     aria-label="LinkedIn"
                     className="p-2.5 rounded-xl bg-[#2C2C2C] text-[#A0A0A0] hover:text-white hover:bg-[#3A3A3A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#5919C2]"
                   >
-                    <Linkedin size={18} />
+                    <Linkedin className="inline" size={18} />
                   </a>
                 </li>
               )}
@@ -51,7 +51,7 @@ export function Footer() {
                   aria-label="Email"
                   className="p-2.5 rounded-xl bg-[#2C2C2C] text-[#A0A0A0] hover:text-white hover:bg-[#3A3A3A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#5919C2]"
                 >
-                  <Mail size={18} />
+                  <Mail className="inline" size={18} />
                 </a>
               </li>
             </ul>
