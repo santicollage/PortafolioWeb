@@ -15,6 +15,7 @@ import type { ExperienceItem } from '../../types';
 
 function formatDate(date: string): string {
   const [year, month] = date.split('-');
+  if (!month) return year;
   const months = [
     'Ene',
     'Feb',

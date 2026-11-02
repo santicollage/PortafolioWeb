@@ -207,30 +207,6 @@ export function Hero() {
           </div>
         </div>
 
-        <motion.div
-          custom={6}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4"
-        >
-          {[
-            { value: '3+', label: 'Años de experiencia' },
-            { value: '10+', label: 'Proyectos completados' },
-            { value: '5+', label: 'Clientes satisfechos' },
-            { value: '100%', label: 'Compromiso' },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="p-4 rounded-2xl bg-[#1F1F1F] border border-[#2C2C2C] text-center"
-            >
-              <div className="text-2xl md:text-3xl font-bold font-display gradient-text">
-                {stat.value}
-              </div>
-              <div className="mt-1 text-xs text-[#6B6B6B]">{stat.label}</div>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );

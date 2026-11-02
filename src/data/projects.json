@@ -2,30 +2,30 @@
   {
     "id": 1,
     "title": "NPS Diesel E-Commerce Platform",
-    "description": "Aplicación web de e-commerce con admin dashboard, sistema de carrito y checkout, landing con animaciones y parallax, completamente responsive.",
-    "longDescription": "Frontend de la plataforma de comercio electrónico para NPS Diesel S.A.S., desarrollado con React y arquitectura moderna de componentes.\n\nCaracterísticas destacadas:\n\n• Admin Dashboard con visualización de datos operativos, gráficos de ventas y métricas de productos\n• Sistema de carrito de compras y proceso de checkout integrado con pasarela de pagos\n• Landing page con animaciones fluidas y efectos parallax para mejorar la experiencia visual\n• Diseño completamente responsive optimizado para dispositivos móviles y tablets\n• Consumo de API REST con manejo de estado global mediante Redux\n• Arquitectura de estilos con Sass utilizando metodología BEM\n• Sistema de autenticación con roles diferenciados (cliente/administrador)\n• Catálogo de productos con filtros, búsqueda y paginación\n\nLa aplicación mantiene coherencia con el branding visual de la empresa y ofrece una experiencia de usuario optimizada tanto para clientes como para administradores.",
+    "description": "E-commerce de autopartes con catálogo, carrito, checkout, panel administrativo con estadísticas y landing con animaciones. Totalmente responsive.",
+    "longDescription": "Frontend del e-commerce de NPS Diesel SAS, construido con React + Vite.\n\nCaracterísticas destacadas:\n\n• Panel administrativo para gestionar productos, pedidos, categorías y usuarios, con estadísticas de ventas en Recharts\n• Carrito de compras y checkout integrado con PayU Latam (probado en sandbox)\n• Landing page con animaciones y efectos parallax\n• Diseño responsive para móviles y tablets\n• Consumo de API REST con estado global en Redux Toolkit\n• Estilos con Sass\n• Autenticación con roles diferenciados (cliente/administrador) y login con Google\n• Catálogo de productos con filtros, búsqueda y paginación\n\nLa aplicación respeta la identidad visual de la empresa y sirve tanto a clientes como a administradores.",
     "image": "/projects/nps-diesel.png",
     "tech": [
       "React",
-      "Redux",
+      "Vite",
+      "Redux Toolkit",
       "Sass",
       "JavaScript",
-      "Responsive Design",
-      "REST API"
+      "Recharts"
     ],
     "url": "https://npsdieselsas.com",
     "repo": "https://github.com/santicollage/NPS-Frontend",
     "featured": true,
     "category": "Frontend",
-    "year": 2025,
-    "challenges": "Crear una interfaz intuitiva que permitiera tanto a clientes navegar y comprar productos como a administradores gestionar el inventario y visualizar métricas operativas, manteniendo un rendimiento óptimo en dispositivos móviles.",
-    "results": "Se desarrolló una aplicación web moderna con dashboard administrativo completo, experiencia de compra fluida y diseño responsive que cumple con los estándares de usabilidad y accesibilidad."
+    "year": 2026,
+    "challenges": "Crear una interfaz que permitiera a los clientes navegar y comprar productos, y a los administradores gestionar el inventario y ver métricas de ventas, con buen rendimiento en dispositivos móviles.",
+    "results": "Una aplicación con panel administrativo completo, flujo de compra de punta a punta y diseño responsive."
   },
   {
     "id": 2,
     "title": "NPS Diesel E-Commerce API",
-    "description": "API REST robusta para e-commerce con autenticación JWT, gestión de inventario, carrito, órdenes, pagos, stock y sistema de roles.",
-    "longDescription": "Backend API para la plataforma de comercio electrónico NPS Diesel S.A.S., construida con Node.js, Express y PostgreSQL.\n\nEndpoints principales:\n\n• Autenticación: Login, registro, OAuth con Google, refresh tokens y cambio de contraseña\n• Usuarios: CRUD completo con sistema de roles y permisos\n• Productos y Categorías: Gestión de catálogo con operaciones bulk\n• Carrito: Soporte para usuarios autenticados y guests con gestión de items\n• Stock: Control de inventario con movimientos, reservas y cleanup automático\n• Órdenes: Creación y seguimiento de pedidos para usuarios y guests\n• Pagos: Integración con pasarela de pagos y webhooks\n• Jobs: Tareas programadas para limpieza y health checks\n\nSeguridad y calidad:\n\n• Autenticación basada en JWT con sistema de roles (admin/cliente)\n• Middlewares de validación y sanitización de datos\n• Testing completo de endpoints\n• Documentación interactiva con Swagger\n• Manejo de errores centralizado\n• Rate limiting y protección contra ataques comunes\n• Prisma ORM para queries seguras y tipadas\n\nLa API está diseñada siguiendo principios REST y arquitectura en capas (controllers, services, repositories).",
+    "description": "API REST para e-commerce con autenticación JWT, gestión de inventario, carrito, órdenes, reserva de stock, roles e integración con PayU (sandbox).",
+    "longDescription": "Backend del e-commerce de NPS Diesel SAS, construido con Node.js, Express, Prisma y PostgreSQL.\n\nEndpoints principales:\n\n• Autenticación: login, registro, OAuth con Google, refresh tokens y cambio de contraseña\n• Usuarios: CRUD completo con roles y permisos\n• Productos y categorías: gestión de catálogo con operaciones masivas\n• Carrito: soporte para usuarios autenticados e invitados\n• Stock: control de inventario con movimientos, reservas y liberación automática\n• Órdenes: creación y seguimiento de pedidos para usuarios e invitados\n• Pagos: integración con PayU Latam y webhooks (probada en sandbox)\n• Jobs: tareas programadas con cron para liberar reservas y health checks\n\nSeguridad y calidad:\n\n• Autenticación con JWT access/refresh y roles (admin/cliente)\n• Middlewares de validación y sanitización de datos\n• Rate limiting y protección CSRF\n• Manejo de errores centralizado\n• Documentación con OpenAPI 3.1 y Swagger UI: 60 endpoints en 13 módulos\n• Entorno reproducible con Docker Compose\n\nLa API sigue principios REST y una arquitectura en capas (controllers, services, repositories).",
     "image": "/projects/nps-diesel-api.jpg",
     "tech": [
       "Node.js",
@@ -34,28 +34,28 @@
       "Prisma",
       "JWT",
       "Swagger",
-      "Jest"
+      "Docker"
     ],
     "url": null,
     "repo": "https://github.com/santicollage/NPS-API",
     "featured": true,
     "category": "Backend",
-    "year": 2025,
-    "challenges": "Diseñar una arquitectura escalable que manejara autenticación, roles, gestión de inventario con reservas de stock, carritos de invitados y usuarios, integración de pagos y documentación completa, todo con altos estándares de seguridad.",
-    "results": "Se implementó una API REST completa y documentada con 40+ endpoints, sistema de autenticación robusto, gestión de stock en tiempo real y testing automatizado, lista para producción."
+    "year": 2026,
+    "challenges": "Diseñar una API que manejara autenticación, roles, reservas de stock sin sobreventa, carritos de invitados y usuarios, e integración de pagos con webhooks, con la documentación al día.",
+    "results": "Una API REST documentada con 60 endpoints en 13 módulos, autenticación dual, reserva de stock con liberación automática y entorno reproducible con Docker."
   },
   {
     "id": 3,
-    "title": "Flimp HR Platform",
-    "description": "Plataforma SaaS para campañas de comunicación y beneficios de empleados utilizada por equipos de recursos humanos y brokers.",
-    "longDescription": "Contribuí al desarrollo frontend de la plataforma Flimp, un producto SaaS utilizado por equipos de recursos humanos para crear campañas de comunicación, micrositios informativos, videos y herramientas de soporte para la toma de decisiones de beneficios de empleados.\n\nMi trabajo se enfocó principalmente en el desarrollo de una funcionalidad que permite a las empresas crear y administrar agentes de IA personalizados para sus propios empleados. Estos agentes pueden integrarse en distintos puntos de la plataforma para responder preguntas y asistir en procesos relacionados con beneficios, onboarding y eventos laborales.\n\nTambién participé en el desarrollo y mejora de herramientas para la edición de micrositios y contenido embebido utilizado en campañas de comunicación interna.\n\nEl trabajo se realizó dentro de un equipo ágil utilizando metodología Scrum, colaborando a través de Jira y Bitbucket para la gestión de tareas y control de versiones.",
+    "title": "Flimp (en Koptup)",
+    "description": "Plataforma B2B de comunicación de beneficios de Recursos Humanos (Estados Unidos). Desarrollé el módulo de creación de chatbots y el editor de micrositios embebible.",
+    "longDescription": "Trabajé en el frontend de Flimp como desarrollador de Koptup. Flimp es una plataforma B2B que usan equipos de Recursos Humanos y brokers de Estados Unidos para comunicar beneficios a los empleados mediante campañas, micrositios y herramientas de soporte.\n\nMi trabajo principal fue el módulo de creación de chatbots personalizables por empresa: cada cliente configura flujos, respuestas y marca para que sus empleados resuelvan dudas sobre beneficios, onboarding y eventos.\n\nTambién construí el editor de micrositios embebible, con múltiples componentes configurables, que se usa en las campañas de comunicación interna.\n\nEl producto está detrás de inicio de sesión, por eso no hay demo ni repositorio públicos. El trabajo se hizo bajo Scrum, con Jira y Bitbucket.",
     "image": "/projects/flimp.jpg",
     "tech": [
+      "React",
       "Next.js",
-      "TypeScript",
       "TailwindCSS",
-      "Laravel",
-      "PHP",
+      "JWT",
+      "Jest",
       "Scrum",
       "Jira",
       "Bitbucket"
@@ -65,8 +65,8 @@
     "featured": true,
     "category": "Frontend",
     "year": 2025,
-    "challenges": "Desarrollar interfaces que permitieran configurar y administrar agentes de IA personalizados para cada empresa, asegurando una experiencia clara para usuarios no técnicos dentro de una plataforma compleja.",
-    "results": "Se integró una nueva funcionalidad que permite a las empresas crear y gestionar asistentes de IA dentro de la plataforma, mejorando las herramientas disponibles para la comunicación y soporte a empleados."
+    "challenges": "Construir interfaces para configurar chatbots y micrositios por empresa que fueran claras para usuarios no técnicos, dentro de una plataforma con muchos módulos.",
+    "results": "Un módulo de chatbots personalizables y un editor de micrositios embebible integrados en el producto."
   },
   {
     "id": 4,

@@ -3,31 +3,31 @@
     {
       "id": 1,
       "type": "work",
-      "title": "Desarrollador Fullstack (Freelance)",
-      "company": "Proyectos Independientes",
+      "title": "Desarrollador Fullstack Freelance",
+      "company": "NPS Diesel SAS",
       "location": "Remoto",
-      "startDate": "2025-08",
-      "endDate": null,
-      "current": true,
-      "description": "Desarrollo de aplicaciones web fullstack usando Next.js, NestJS y PostgreSQL. Especialización en plataformas e-commerce completas.",
-      "longDescription": "Desarrollo de soluciones web end-to-end para clientes que requieren plataformas de comercio electrónico funcionales y escalables. Mi trabajo abarca desde el análisis de requerimientos hasta el despliegue en producción, pasando por el diseño de arquitectura, desarrollo frontend y backend, y configuración de infraestructura.\n\nEn el backend, diseño y construyo APIs REST robustas con NestJS y Prisma ORM, conectadas a bases de datos PostgreSQL. Implemento sistemas de autenticación y autorización con JWT, gestión de roles y permisos, validación de datos, manejo de errores centralizado y documentación con Swagger.\n\nEn el frontend, desarrollo interfaces modernas y responsivas con React, Next.js y Tailwind CSS, enfocándome en la experiencia de usuario, conversión y rendimiento. Implemento funcionalidades como carritos de compra, checkout con pasarelas de pago, dashboards administrativos con visualización de datos, y sistemas de gestión de catálogo.\n\nRealizo el despliegue completo de las aplicaciones en entornos productivos, configurando hosting, bases de datos, SSL, dominios y optimizaciones de rendimiento. Entrego soluciones llave en mano que permiten a los clientes operar y administrar sus negocios de forma autónoma.",
+      "startDate": "2025-12",
+      "endDate": "2026-03",
+      "current": false,
+      "description": "E-commerce de autopartes construido de punta a punta como único desarrollador: frontend en React + Vite, API en Node.js + Express + Prisma + PostgreSQL, panel administrativo y despliegue con Docker.",
+      "longDescription": "Diseñé y construí el e-commerce de NPS Diesel SAS como único desarrollador, desde la base de datos hasta el despliegue.\n\nEn el frontend usé React + Vite con Redux Toolkit para el estado global. Incluye catálogo, carrito, checkout y un panel administrativo para gestionar productos, pedidos, categorías y usuarios, con estadísticas en Recharts.\n\nEn el backend construí una API REST con Node.js, Express, Prisma ORM y PostgreSQL. Implementé autenticación dual (email/contraseña y Google OAuth) con JWT access/refresh tokens, rate limiting y protección CSRF, y un sistema de reserva de stock con liberación automática por cron jobs para evitar sobreventa en pagos diferidos.\n\nIntegré la pasarela PayU Latam con webhooks para actualizar el estado de los pedidos (probada en sandbox). Documenté la API con OpenAPI 3.1 y Swagger UI (60 endpoints en 13 módulos) y configuré el entorno con Docker Compose. El frontend se desplegó en Netlify y el backend en un servidor con Docker.",
       "technologies": [
-        "Next.js",
         "React",
-        "NestJS",
+        "Vite",
+        "Redux Toolkit",
         "Node.js",
-        "TypeScript",
+        "Express",
         "Prisma",
         "PostgreSQL",
-        "Tailwind CSS",
         "JWT",
+        "Docker",
         "Swagger"
       ],
       "achievements": [
-        "Desarrollo de plataformas e-commerce personalizadas con gestión completa de catálogo, usuarios y flujo de compra",
-        "Implementé tiendas que generan ingresos recurrentes para distintas empresas, facilitando su operación comercial digital",
-        "Reduje tiempos de carga y mejoré la experiencia de usuario mediante optimizaciones frontend, lazy loading y buenas prácticas de desarrollo",
-        "Entregué soluciones end-to-end completas, permitiendo a los clientes administrar sus tiendas de forma autónoma sin dependencia técnica"
+        "Construí el frontend en React + Vite y el backend en Node.js + Express + Prisma + PostgreSQL como único desarrollador",
+        "Diseñé un sistema de reserva de stock con liberación automática por cron jobs para evitar sobreventa",
+        "Implementé autenticación dual (email/contraseña y Google OAuth) con JWT access/refresh, rate limiting y CSRF",
+        "Integré PayU Latam con webhooks (probada en sandbox) y documenté la API con OpenAPI 3.1: 60 endpoints en 13 módulos"
       ]
     },
     {
@@ -39,48 +39,86 @@
       "startDate": "2023-08",
       "endDate": "2025-11",
       "current": false,
-      "description": "Desarrollo frontend para múltiples clientes en empresa de tercerización. Desarrollo principal de Flimp, plataforma B2B de Recursos Humanos.",
-      "longDescription": "Trabajé como desarrollador frontend en una empresa de tercerización de desarrollo web, atendiendo las necesidades de múltiples clientes corporativos. Mi rol principal fue el desarrollo de Flimp, una plataforma B2B SaaS utilizada por equipos de recursos humanos para crear campañas de comunicación, micrositios informativos y herramientas de soporte para beneficios de empleados.\n\nDesarrollé funcionalidades clave como la creación y administración de agentes de IA personalizados para empresas, permitiendo a los empleados obtener asistencia automatizada en procesos de beneficios, onboarding y eventos laborales. Estos agentes se integraron en distintos puntos de la plataforma, mejorando significativamente la experiencia de usuario.\n\nImplementé aplicaciones web con React, Next.js y Tailwind CSS en el frontend, y trabajé con PHP y Laravel en integraciones backend. Diseñé componentes reutilizables, escalables y mantenibles siguiendo principios de clean code y arquitectura modular.\n\nImplementé sistemas de autenticación y control de accesos con JWT, gestionando roles y permisos para diferentes tipos de usuarios. Participé activamente en análisis de requerimientos junto al equipo de producto, realicé code reviews para mantener la calidad del código, y contribuí a procesos de mejora continua del producto.\n\nImplementé pruebas unitarias y funcionales en el frontend utilizando Jest y React Testing Library, asegurando la estabilidad y confiabilidad de las funcionalidades desarrolladas. Trabajé bajo metodología Scrum con sprints de dos semanas, utilizando Jira para gestión de tareas y Bitbucket para control de versiones.",
+      "description": "Empresa de tercerización de desarrollo web. Proyecto principal: Flimp, plataforma B2B de comunicación de beneficios de Recursos Humanos (Estados Unidos).",
+      "longDescription": "Trabajé como desarrollador frontend en Koptup, una empresa de tercerización de desarrollo web. Mi proyecto principal fue Flimp, una plataforma B2B que usan equipos de Recursos Humanos de Estados Unidos para comunicar beneficios a sus empleados mediante campañas, micrositios y herramientas de soporte.\n\nDesarrollé el módulo de creación de chatbots personalizables por empresa (flujos, respuestas y marca) y un editor de micrositios embebible con múltiples componentes configurables, uno de los módulos más complejos en manejo de estado y composición de UI.\n\nImplementé interfaces pixel-perfect desde Figma y componentes reutilizables con React y Next.js, además de autenticación y control de accesos por roles con JWT. Escribí pruebas unitarias y funcionales con Jest y React Testing Library, e hice ajustes puntuales en servicios backend con Node.js y NestJS.\n\nTrabajé bajo Scrum, con Jira para la gestión de tareas y Bitbucket para el control de versiones, y participé en code reviews y análisis de requerimientos.",
       "technologies": [
         "React",
         "Next.js",
-        "TypeScript",
         "Tailwind CSS",
-        "PHP",
-        "Laravel",
+        "JWT",
         "Jest",
+        "React Testing Library",
+        "Node.js",
+        "NestJS",
         "Jira",
         "Bitbucket",
-        "JWT",
         "Scrum"
       ],
       "achievements": [
-        "Desarrollé módulos de agentes de IA utilizados por más de 20 empresas clientes, facilitando el acceso automatizado a información corporativa y soporte a empleados",
-        "Optimicé el tiempo de desarrollo mediante la implementación de una arquitectura frontend modular y sistema de componentes reutilizables",
-        "Reduje errores en producción gracias a la implementación de pruebas unitarias, validaciones de datos y code reviews sistemáticos",
-        "Mejoré la usabilidad y adopción de la plataforma a través de iteraciones continuas del producto basadas en feedback de usuarios y métricas de uso"
+        "Desarrollé el módulo de creación de chatbots personalizables por empresa, una de las funcionalidades centrales del producto",
+        "Construí un editor de micrositios embebible con múltiples componentes configurables",
+        "Implementé autenticación y control de accesos por roles con JWT, con rutas protegidas y permisos granulares",
+        "Escribí pruebas unitarias y funcionales con Jest y React Testing Library y participé en code reviews"
       ]
     }
   ],
   "education": [
     {
+      "id": 5,
+      "type": "education",
+      "title": "Tecnólogo en Análisis y Desarrollo de Software",
+      "company": "SENA",
+      "location": "Bogotá, Colombia",
+      "startDate": "2026-07",
+      "endDate": null,
+      "current": true,
+      "description": "Formación tecnológica en curso. Proyecto formativo: software de gestión y seguimiento de indicadores empresariales para Agroz S.A.",
+      "longDescription": "Tecnólogo en Análisis y Desarrollo de Software en el SENA, en curso desde julio de 2026.\n\nComo proyecto formativo desarrollo un software de gestión y seguimiento de indicadores empresariales para Agroz S.A.",
+      "technologies": [
+        "Análisis de requerimientos",
+        "Desarrollo de software",
+        "Bases de datos"
+      ],
+      "achievements": [
+        "Proyecto formativo: software de gestión y seguimiento de indicadores empresariales para Agroz S.A."
+      ]
+    },
+    {
+      "id": 4,
+      "type": "education",
+      "title": "Ingeniero Agrícola",
+      "company": "Universidad Nacional de Colombia",
+      "location": "Bogotá, Colombia",
+      "startDate": "2016",
+      "endDate": "2021",
+      "current": false,
+      "description": "Título profesional (graduado). Una formación de ingeniería que me dejó método para analizar sistemas con muchas variables y decidir con restricciones reales.",
+      "longDescription": "Ingeniero Agrícola graduado de la Universidad Nacional de Colombia.\n\nLa carrera me dio una base de ingeniería: análisis de sistemas con muchas variables, toma de decisiones con restricciones reales, manejo de datos y trabajo con equipos de distintas áreas.\n\nEmpecé a programar por mi cuenta después de graduarme, mientras trabajaba en otras áreas. Esa forma de analizar problemas es la que hoy aplico al desarrollo de software.",
+      "technologies": [
+        "Análisis de sistemas",
+        "Análisis de datos",
+        "Gestión de proyectos"
+      ],
+      "achievements": [
+        "Título profesional de Ingeniero Agrícola, Universidad Nacional de Colombia"
+      ]
+    },
+    {
       "id": 3,
       "type": "education",
-      "title": "Formación en Desarrollo de Software",
+      "title": "Desarrollo de Aplicaciones Web",
       "company": "Platzi",
       "location": "Online",
-      "startDate": "2022-01",
-      "endDate": "2025-12",
+      "startDate": "2023-11",
+      "endDate": "2024-11",
       "current": false,
-      "description": "Formación continua en desarrollo web frontend y fullstack con énfasis en tecnologías modernas de JavaScript y TypeScript.",
-      "longDescription": "Formación continua y especializada en desarrollo web frontend y fullstack a través de la plataforma Platzi, con énfasis en el ecosistema de JavaScript moderno y las mejores prácticas de la industria.\n\nLa formación abarcó un amplio espectro de tecnologías y conceptos fundamentales para el desarrollo web profesional. En el frontend, me especialicé en React y Next.js, aprendiendo desde los fundamentos de componentes y hooks hasta patrones avanzados de arquitectura, optimización de rendimiento, Server-Side Rendering (SSR) y Static Site Generation (SSG).\n\nEstudié JavaScript y TypeScript en profundidad, cubriendo ES6+, programación funcional, programación orientada a objetos, manejo asíncrono con Promises y async/await, y tipado estático para aplicaciones escalables. Aprendí HTML semántico y accesibilidad web (a11y), así como CSS moderno incluyendo Flexbox, Grid, animaciones y Tailwind CSS para desarrollo ágil de interfaces.\n\nEn el backend, trabajé con Node.js, Express y NestJS, aprendiendo a construir APIs REST robustas, implementar autenticación y autorización, diseñar arquitecturas escalables y aplicar principios SOLID y clean code. Estudié PostgreSQL y bases de datos relacionales, cubriendo diseño de esquemas, optimización de queries, transacciones y uso de ORMs como Prisma.\n\nAdemás, adquirí conocimientos en control de versiones con Git y GitHub, incluyendo flujos de trabajo colaborativos, branching strategies y resolución de conflictos. Aprendí fundamentos de testing con Jest y React Testing Library, metodologías ágiles (Scrum, Kanban) y buenas prácticas de desarrollo profesional.\n\nTodos los conocimientos fueron aplicados en proyectos prácticos y reales, permitiéndome desarrollar habilidades técnicas sólidas y experiencia práctica en el desarrollo de aplicaciones web modernas y escalables.",
+      "description": "Formación en desarrollo web frontend y fullstack: React, Next.js, Node.js, NestJS, TypeScript, PostgreSQL y testing.",
+      "longDescription": "Ruta de desarrollo de aplicaciones web en Platzi.\n\nEn el frontend estudié React y Next.js (componentes, hooks, SSR y SSG), JavaScript ES6+ y TypeScript, HTML semántico, CSS moderno y Tailwind CSS.\n\nEn el backend trabajé con Node.js, Express y NestJS para construir APIs REST con autenticación, y con PostgreSQL y Prisma para el diseño y consulta de bases de datos relacionales.\n\nTambién cubrí Git y GitHub, fundamentos de testing con Jest y React Testing Library, y metodologías ágiles.",
       "technologies": [
         "React",
         "Next.js",
         "JavaScript",
         "TypeScript",
-        "HTML",
-        "CSS",
         "Tailwind CSS",
         "Node.js",
         "Express",
@@ -88,41 +126,12 @@
         "PostgreSQL",
         "Prisma",
         "Git",
-        "GitHub",
-        "Jest",
-        "Scrum"
+        "Jest"
       ],
       "achievements": [
-        "Completé más de 50 cursos especializados en desarrollo web frontend y fullstack",
-        "Desarrollé múltiples proyectos prácticos aplicando los conocimientos adquiridos en cada área de estudio",
-        "Adquirí experiencia práctica en el stack tecnológico completo utilizado en la industria actual",
-        "Mantuve formación continua actualizada con las últimas tendencias y mejores prácticas del desarrollo web"
-      ]
-    },
-    {
-      "id": 4,
-      "type": "education",
-      "title": "Ingeniería Agrícola",
-      "company": "Universidad Nacional de Colombia",
-      "location": "Bogotá, Colombia",
-      "startDate": "2017-01",
-      "endDate": "2022-12",
-      "current": false,
-      "description": "Formación profesional orientada al análisis de datos, resolución de problemas complejos y gestión de proyectos.",
-      "longDescription": "Formación profesional universitaria en Ingeniería Agrícola en la Universidad Nacional de Colombia. Esta carrera me proporcionó una base sólida en análisis de datos, resolución de problemas complejos, planificación estratégica y gestión de proyectos.\n\nDurante la carrera desarrollé habilidades fundamentales en el enfoque analítico y metodológico para abordar problemas complejos, la toma de decisiones basada en datos y evidencia, la optimización de procesos y recursos, y el trabajo interdisciplinario con equipos diversos.\n\nLa formación incluyó un fuerte componente de pensamiento lógico y estructurado, análisis de requerimientos y especificaciones técnicas, documentación técnica y comunicación de resultados, y trabajo bajo metodologías estructuradas y orientadas a objetivos. Además, adquirí experiencia en gestión de proyectos desde la planificación hasta la ejecución y evaluación.\n\nDesarrollé habilidades transferibles al desarrollo de software como el pensamiento analítico y resolución sistemática de problemas, capacidad de aprender y adaptarse a nuevas tecnologías y dominios, enfoque orientado a resultados y optimización, trabajo colaborativo en equipos multidisciplinarios, y comunicación efectiva de conceptos técnicos complejos.\n\nEsta formación complementa mi perfil técnico en desarrollo de software, aportando una perspectiva única de análisis, planificación estratégica y gestión que me permite abordar proyectos de desarrollo con una visión integral y orientada a la solución de problemas reales de negocio.",
-      "technologies": [
-        "Análisis de Datos",
-        "Gestión de Proyectos",
-        "Resolución de Problemas",
-        "Planificación Estratégica",
-        "Optimización de Procesos",
-        "Metodologías Estructuradas"
-      ],
-      "achievements": [
-        "Desarrollé habilidades analíticas y de resolución de problemas aplicables al desarrollo de software",
-        "Adquirí experiencia en gestión de proyectos y trabajo interdisciplinario",
-        "Formé capacidad de análisis de requerimientos y documentación técnica",
-        "Desarrollé pensamiento lógico y estructurado fundamental para la programación"
+        "Formación en frontend con React y Next.js y en backend con Node.js, Express y NestJS",
+        "Bases de datos relacionales con PostgreSQL y Prisma",
+        "Fundamentos de testing con Jest y React Testing Library"
       ]
     }
   ]

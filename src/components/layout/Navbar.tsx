@@ -11,17 +11,9 @@ const NAV_LINKS = [
   { href: '#projects', label: 'Proyectos' },
   { href: '#experience', label: 'Experiencia' },
   { href: '#about', label: 'Sobre mí' },
-  { href: '#services', label: 'Servicios' },
 ];
 
-const SECTION_IDS = [
-  'hero',
-  'skills',
-  'projects',
-  'experience',
-  'about',
-  'services',
-];
+const SECTION_IDS = ['hero', 'skills', 'projects', 'experience', 'about'];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);

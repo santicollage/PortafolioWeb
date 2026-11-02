@@ -6,8 +6,6 @@ import { Skills } from './components/sections/Skills';
 import { Projects } from './components/sections/Projects';
 import { Experience } from './components/sections/Experience';
 import { About } from './components/sections/About';
-import { Services } from './components/sections/Services';
-import { ServicesPage } from './pages/ServicesPage';
 import { ScrollToTop } from './components/ui/ScrollToTop';
 import { ScrollToTopOnMount } from './components/ui/ScrollToTopOnMount';
 
@@ -22,7 +20,6 @@ function PortfolioHome() {
         <Projects />
         <Experience />
         <About />
-        <Services />
       </main>
       <Footer />
     </>
@@ -35,17 +32,6 @@ function App() {
       <ScrollToTopOnMount />
       <Routes>
         <Route path="/" element={<PortfolioHome />} />
-        <Route
-          path="/services"
-          element={
-            <>
-              <Navbar />
-              <ScrollToTop />
-              <ServicesPage />
-              <Footer />
-            </>
-          }
-        />
       </Routes>
     </BrowserRouter>
   );
