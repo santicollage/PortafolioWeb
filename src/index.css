@@ -252,3 +252,30 @@ body {
     height: 35vh;
   }
 }
+
+/* ---------- Hero: fondo fluido (GrainGradient) ---------- */
+/* Oscurece suavemente la zona del texto sin cortar la figura */
+.hero-fluid__fade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15, 15, 15, 0.7) 0%,
+      rgba(15, 15, 15, 0.45) 35%,
+      transparent 60%
+    ),
+    linear-gradient(180deg, transparent 85%, #0f0f0f 100%);
+}
+
+@media (max-width: 1023px) {
+  .hero-fluid__fade {
+    background: linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 18rem,
+      rgba(15, 15, 15, 0.6) 28rem,
+      rgba(15, 15, 15, 0.75) 100%
+    );
+  }
+}

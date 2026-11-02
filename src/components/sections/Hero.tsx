@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Download, MapPin, Circle } from 'lucide-react';
 import personalData from '../../data/personal.json';
+import { HeroFluid } from '../ui/HeroFluid';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -15,22 +16,9 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden hero-grid"
+      className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden"
     >
-      <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute top-1/4 -left-32 w-80 h-80 rounded-full opacity-20 blur-3xl"
-          style={{
-            background: 'radial-gradient(circle, #5919C2, transparent)',
-          }}
-        />
-        <div
-          className="absolute bottom-1/4 -right-32 w-80 h-80 rounded-full opacity-20 blur-3xl"
-          style={{
-            background: 'radial-gradient(circle, #F68237, transparent)',
-          }}
-        />
-      </div>
+      <HeroFluid />
 
       <div className="relative w-full max-w-6xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
